@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title navbar-brand" href="{{ site.baseurl }}/">
+      <img style="display:inline-block;" src="/img/logo.png" alt="{{{image.alt}}}">
+      {{ site.title }}
+    </a>
+    <nav id="navbar" class="site-nav" role="navigation">
+      <a href="#" class="menu-icon navbar-toggle btn-default">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="fa fa-bars fa-lg"></span>
+        <span>&nbsp;Menu</span>
+
+      </a>
+
+      <div class="trigger">
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+  </div>
+</header>

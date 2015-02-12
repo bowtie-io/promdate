@@ -1,0 +1,310 @@
+---
+layout: splash
+---
+
+<div id="content">
+  <script type="text/handlebars" id="main">
+    {% raw %}
+        {{#each sections}}
+          {{#section "hero"}}
+            <div id="hero" class="{{sectionClasses}}" style="{{sectionBackground}}">
+              <div class="container">
+                <div class="logo-display">
+                  {{#if image}}
+                    <img src="{{{image.url}}}" class="logo container img hidden-xs" alt="{{{image.alt}}}">
+                    <img src="{{{image.url}}}" class="logo container img-responsive visible-xs img" alt="{{{image.alt}}}">
+                  {{/if}}
+
+                  {{#if title}}
+                    <h1 class="page-title">{{title}}</h1>
+                  {{/if}}
+
+
+                </div>
+                {{#if subtitle}}
+                  <h2>{{subtitle}}</h2>
+                {{/if}}
+
+                {{#if body}}
+                  <p>{{body}}</p>
+                {{/if}}
+
+                {{#if action}}
+                  <a href="{{{action.url}}}">
+                    <button class="btn {{{or action.style 'btn-default'}}}">{{action.content}}</button>
+                  </a>
+                {{/if}}
+              </div>
+            </div>
+          {{/section}}
+
+          {{#section "navigation"}}
+            <div id="nav" class="navbar {{sectionClasses}}" style="{{sectionBackground}}" data-spy="affix" data-offset-top="250">
+              <nav class="navbar {{sectionLayout}}" role="navigation">
+                <div class="navbar-inner" id="navbarinner">
+                  <!-- Brand and toggle grouped for mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle btn-default" data-toggle="collapse" data-target=".navbar-1-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="fa fa-bars fa-lg"></span>
+                      <span>&nbsp;Menu</span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                      {{#if brand.image}}
+                        <img style="display:inline-block;" src="{{{brand.image.url}}}" alt="{{{image.alt}}}">
+                      {{/if}}
+
+                      {{#if brand.content}}
+                        {{brand.content}}
+                      {{/if}}
+
+                    </a>
+                  </div>
+
+                 <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse navbar-1-collapse">
+                    <ul class="nav navbar-nav">
+                      {{#each links}}
+                        <li class="navbar-icons {{navItemClasses}}">
+                          <a href="{{{href}}}">
+                            {{#if icon}}
+                              <i class="fa {{{icon.class}}}" />
+                            {{/if}}
+
+                            {{#if image}}
+                              <img src="{{{image.url}}}" />
+                            {{/if}}
+
+                            {{content}}
+                          </a>
+                        </li>
+                      {{/each}}
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.navbar-inner -->
+              </nav><!--.navbar -->
+            </div><!-- Navbar -->
+          {{/section}}
+
+          <span id="top-link-block" class="hidden">
+            <a href="#top" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+              <i class="fa fa-chevron-up"></i>
+            </a>
+          </span><!-- /top-link-block -->
+
+          {{#section "team"}}
+            <div class="team {{sectionClasses}}" style="{{sectionBackground}}">
+              <a name="team"></a>
+              <div class="container row-80 text-center">
+                {{#if title}}
+                  <h1>{{title}}</h1>
+                {{/if}}
+
+                {{#if subtitle}}
+                  <h3>{{subtitle}}</h3>
+                {{/if}}
+
+                {{#if members}}
+                  <span class="row">
+                    <p>&nbsp;</p>
+                    <section class="center-team">
+                      {{#each members}}
+                        <column class="{{{width}}}">
+                          {{#if image}}
+                            <img class="img-circle img profilepic" src="{{{image.url}}}">
+                          {{/if}}
+
+                          {{#if name}}
+                            <h3 class="name">{{name}}</h3>
+                          {{/if}}
+
+                          {{#if body}}
+                            <p class="area">{{body}}</p>
+                          {{/if}}
+                        </column>
+                      {{/each}}
+                    </section>
+                  </span>
+                {{/if}}
+              </div>
+            </div>
+          {{/section}}
+
+          {{#section "generic"}}
+            <div class="generic {{sectionClasses}}" style="{{sectionBackground}}">
+              <div class="container text-center">
+                {{#if image}}
+                  <img src="{{{image.url}}}" class="container img" alt="{{{image.alt}}}">
+                {{/if}}
+
+                {{#if title}}
+                  <h1>{{title}}</h1>
+                {{/if}}
+
+                {{#if subtitle}}
+                  <h3>{{subtitle}}</h3>
+                {{/if}}
+
+                {{#if body}}
+                  <p class="text-center area">{{body}}</p>
+                {{/if}}
+
+                {{#if action}}
+                    <a href="{{{action.url}}}" class="container">
+                      <button class="btn {{{or action.style 'btn-default'}}}">{{action.content}}</button>
+                    </a>
+                {{/if}}
+              </div>
+            </div>
+          {{/section}}
+
+
+          {{#section "email-signup"}}
+            <div class="countdown {{sectionClasses}}" style="{{sectionBackground}}">
+              <a name="signup"></a>
+
+              {{#if countdown}}
+                <div class="row">
+                  <!--countdown timer-->
+                  <!--Use data-countdown="2016/05/01" below to state the count down to date-->
+                  <div id="count-down" class="count-down pull-center" data-countdown-hide-oncomplete="true" data-countdown="{{{countdown.date}}}">
+                    <div class="count-down-complete">
+                      <h2>{{{countdown.complete}}}</h2>
+                    </div>
+                  </div>
+                </div>
+              {{/if}}
+
+              <div class="container signup-form">
+                <form class="prospect-registration form-bloat form-stretch" method="post">
+                  <div class="prospect-registration-pending">
+                    {{#if title}}
+                      <h1>{{title}}</h1>
+                    {{/if}}
+
+                    {{#if subtitle}}
+                      <h3>{{subtitle}}</h3>
+                    {{/if}}
+                    <div class="input-append">
+                      <input type="text" name="prospect[email]" type="text" placeholder="Email Address">
+                      <button class="btn btn-default" type="submit">Sign Up</button>
+                    </div>
+                    <p class="help-block text-muted">We won't spam or sell your email.</p>
+                  </div>
+
+                  <div class="prospect-registration-successful" style="display:none;">
+                    <h1>Thanks for Signing Up!</h1>
+                    <h3>Keep an eye on your Email. We'll be in touch.</h3>
+                  </div>
+                </form>
+              </div>
+            </div>
+          {{/section}}
+
+
+          {{#section "features"}}
+          <div id="features" class="countdown {{sectionClasses}}" style="{{sectionBackground}}">
+            <a name="features"></a>
+
+            <div class="container row-80">
+              <div class="col-sm-12">
+                {{#if title}}
+                    <h1>{{title}}</h1>
+                  {{/if}}
+
+                  {{#if subtitle}}
+                    <h3>{{subtitle}}</h3>
+                    <br>
+                  {{/if}}
+              </div>
+
+              <div class="row features clearfix">
+                {{#if columns}}
+                  {{#each columns}}
+                  <div class="feature {{{width}}}">
+                    <div class="inner">
+                      {{#if icon}}
+                        {{#if icon.image}}
+                          <i><img src="{{{icon.image.url}}}" alt="{{{icon.image.alt}}}"/></i>
+                        {{/if}}
+
+                        {{#if icon.class}}
+                          <i class="fa {{{icon.class}}}"></i>
+                        {{/if}}
+                      {{/if}}
+
+                      {{#if title}}
+                        <h3 class="title">{{{title}}}</h3>
+                      {{/if}}
+
+                      {{#if subtitle}}
+                        <h4 class="sub-title">{{{subtitle}}}</h4>
+                      {{/if}}
+
+                      {{#if content}}
+                        <p>{{{content}}}</p>
+                      {{/if}}
+                    </div>
+                  </div>
+                  {{/each}}
+                {{/if}}
+              </div>
+              <div class="row text-center">
+                {{#if action}}
+                    <a href="{{{action.url}}}" class="container">
+                      <button class="btn {{{or action.style 'btn-default'}}}">{{action.content}}</button>
+                    </a>
+                {{/if}}
+              </div>
+            </div>
+          </div>
+          {{/section}}
+
+
+          {{#section "footer"}}
+            <footer id="footer" class="{{sectionClasses}}" style="{{sectionBackground}}">
+              <div class="container">
+                <div class="row social-media">
+                  {{#if title}}
+                    <h5 class="title">{{{title}}}</h3>
+                  {{/if}}
+                  <a name="connect"></a>
+                  {{#if networks}}
+                    <div>
+                      {{#each networks}}
+                        <a href="{{{url}}}" target="_blank">
+                          <i class="fa {{{icon-class}}} {{{icon-sizes}}}"></i>
+                        </a>
+                      {{/each}}
+                    </div>
+                  {{/if}}
+                </div>
+
+                <div class="row subfooter">
+                  <p>Made with <a href="http://bowtie.io">⋈ Bow Tie</a>.</p>
+                </div>
+              </div>
+            </footer>
+          {{/section}}
+        {{/each}}
+    {% endraw %}
+  </script>
+</div>
+
+<script type="text/javascript">
+  $.getJSON("/index.json", { dataType: 'json' }).success(function(data){
+    /* Dynamic content from index.json */
+    page.render(data);
+
+    /* Controls based on user's session
+     * NOTE: Do not use this to hide sensitive elements - this is client side only
+     *       and designed for display of navigation options */
+    bowtie.user.info(function(user){
+      if(user){
+        $('.signed-in').show();
+      }else{
+        $('.signed-out').show();
+      }
+    });
+  });
+</script>

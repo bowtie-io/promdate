@@ -1,0 +1,15 @@
+{
+  "name": "bowtie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bowtie.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-uglify": "^1.0.1",
+    "gulp-concat": "^2.4.1"
+  }
+}
