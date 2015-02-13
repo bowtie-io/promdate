@@ -4,11 +4,11 @@ function dmProject(project_sid) {
     this.get_potential_matches = function () {
       $.ajax({
         type: 'GET',
-        url: "/matches",
+        url: "/dm_users",
         contentType: "application/json",
         data: {project: "project_sid "},
       }).done(function(response) {
-        cosole.log(response)
+        console.log(response)
       });
     }
 
