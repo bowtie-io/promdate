@@ -2,10 +2,9 @@ function dmProject(project_sid) {
     this.project_sid = project_sid;
 
     this.get_potential_matches = function () {
-      console.log("foo");
       $.ajax({
         type: 'GET',
-        url: "https://4d250b93.ngrok.com/dm_users",
+        url: "/dm_users",
         contentType: "application/json",
         data: {project: "project_sid "},
       }).done(function(response) {
