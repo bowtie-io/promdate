@@ -3,7 +3,7 @@ function dmProject(project_sid) {
 
     this.get_potential_matches = function () {
       $.ajax({
-        type: 'POST',
+        type: 'GET',
         url: "/matches",
         contentType: "application/json",
         data: {project: "project_sid "},
