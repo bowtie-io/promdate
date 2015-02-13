@@ -4,7 +4,7 @@ function dmProject(project_sid) {
     this.get_potential_matches = function () {
       $.ajax({
         type: 'GET',
-        url: "https://datamatch.bowtied.io/dm_users",
+        url: "https://4d250b93.ngrok.com/dm_users",
         contentType: "application/json",
         data: {project: "project_sid "},
       }).done(function(response) {
