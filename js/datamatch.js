@@ -6,6 +6,10 @@ function dmProject(project_sid) {
         type: 'GET',
         url: "/dm_users",
         contentType: "application/json",
+        headers: {
+                  Accept : "application/json",
+        },
+
         data: {project: "project_sid "},
       }).done(function(response) {
         console.log(response)
