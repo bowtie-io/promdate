@@ -1,15 +1,15 @@
-function dmProject(project_sid, user) {
+function dmProject(project_sid) {
     this.project_sid = project_sid;
 
-
     this.get_potential_matches = function () {
-        $.get("/dm_users",
-        {
-          project_id: this.project_sid, user_id: "62", user_name: user.name, user_email: user.email
-        },
-        function(data, status){
-            alert("Data: " + data + "\nStatus: " + status);
-        }, "json" );
+      $.ajax({
+        type: 'GET',
+        url: "/dm_users",
+        contentType: "application/json",
+        data: {project: "project_sid "},
+      }).done(function(response) {
+        console.log(response)
+      });
     }
 
     this.set_match = function (potential_matched_id) {
