@@ -70,12 +70,8 @@ layout: splash
       if(user){
         $('.signed-in').show();
 
-
-        var overEZ = new dmProject("pr_UA9OFWTr");
-
+        var overEZ = new dmProject("pr_UA9OFWTr", user);
         overEZ.get_potential_matches();
-
-
 
       }else{
         $('.signed-out').show();
