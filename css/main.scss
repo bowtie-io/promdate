@@ -57,8 +57,34 @@ img.avatar{
 body{
   width: 100%;
   height: 100%;
+}
+
+ul#potential_matches a, ul#actual_matches  a {
+display:inline-block;
+background-color: grey;
+padding:5px 15px;
+text-align:center;
+margin: 0 auto;
+font-weight: bold;
+color: #fff;
+font-size:1.4em;
+}
+
+
+ul#potential_matches a#ya, ul#actual_matches  a#ya {
+
+  background-color: #54a31f;
 
 }
+
+
+
+ul#potential_matches a#na, ul#actual_matches  a#na {
+
+  background-color: #c44141;
+
+}
+
 
 ul#potential_matches, ul#actual_matches {
   width:90%;
