@@ -59,16 +59,25 @@ layout: splash
                         </footer>
 </div>
 
+
+
+
+
 <script type="text/javascript">
 
     bowtie.user.info(function(user){
       if(user){
         $('.signed-in').show();
+
+
+        var overEZ = new dmProject("pr_UA9OFWTr");
+
+        overEZ.get_potential_matches();
+
+
+
       }else{
         $('.signed-out').show();
       }
     });
-
-
-
 </script>
