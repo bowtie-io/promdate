@@ -1,214 +1,230 @@
 {
-  "sections": [
-    {
-      "type": "hero",
-      "style": "section",
-      "classes": [""],
-      "layout": "no-image",
-      "image": {
-        "url": "/img/logo.png",
-        "alt": "Logo"
-      },
-      "background": {
-        "image": null,
-        "attachment": null,
-        "parallax": false
-      },
-      "title": "We are Heroes",
-      "subtitle": "We're launching with ⋈ BowTie.io",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "action": {
-        "content": "Learn More",
-        "url": "#features",
-        "style": null
-      }
-    },
-
-    {
-      "type": "navigation",
-      "layout": "navbar",
-      "style": "color",
-      "classes": ["hidden-xl"],
-      "brand": {
-        "image": { "url": "/img/logo.png" },
-        "content": null
-      },
-      "links": [
-        {
-          "action": "generic",
-          "linkType": "text",
-          "content": "Features",
-          "href": "#features"
-        },
-        {
-          "action": "sign_in",
-          "linkType": "text",
-          "content": "Sign In",
-          "href": "/users/sign_in"
-        },
-        {
-          "action": "sign_up",
-          "linkType": "text",
-          "content": "Register",
-          "href": "/users/sign_up"
-        },
-        {
-          "action": "sign_out",
-          "linkType": "text",
-          "content": "Sign Out",
-          "href": "/users/sign_out"
-        },
-        {
-          "action": "account",
-          "linkType": "text",
-          "content": "My Account",
-          "href": "/users/edit"
-        },
-        {
-          "action": "generic",
-          "linkType": "text",
-          "content": "Contact",
-          "href": "#connect"
-        }
-      ]
-    },
-
-    {
-      "type": "email-signup",
-      "style": "section-alt",
-      "classes": [""],
-      "list": "sample",
-      "countdown": {
-        "date": "2015/11/15",
-        "complete": "Get ready. We're about to blow up."
-      },
-      "background": {
-        "image": null,
-        "attachment": null,
-        "parallax": false
-      },
-      "title": "Join Our Beta!",
-      "subtitle": ""
-    },
-
-    {
-      "type": "features",
-      "style": "section",
-      "classes": [""],
-      "background": {
-        "image": null,
-        "attachment": null,
-        "parallax": true
-      },
-      "title": "All the Things",
-      "subtitle": "Are there more things to be had?",
-      "columns": [
-        {
-          "width":        "col-sm-6",
-          "title":        "Code Well",
-          "subtitle":     "Feature 1 Sub",
-          "content":      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "icon": {
-            "class": "fa-code-fork",
-            "image": null,
-            "content": null
-          }
-        },
-        {
-          "width":        "col-sm-6",
-          "title":        "Ship Fast",
-          "subtitle":     "Feature 2 Sub",
-          "content":      "Lorem ipsum dolor sit amet, consectetur adipiscing elit 2.",
-          "icon": {
-            "class": null,
-            "image": {
-              "url": "/img/rocket.png",
-              "alt": "Feature 2"
-            },
-            "content": null
-          }
-        }
-      ]
-    },
-
-    {
-      "type": "generic",
-      "style": "section-alt",
-      "classes": [""],
-      "layout": null,
-      "image": null,
-      "background": {
-        "image": {
-          "url": "/img/backgrounds/bg2.jpg"
-        },
-        "attachment": "tile",
-        "parallax": true
-      },
-      "title": "Lorem Ipsum Contentum",
-      "subtitle": "This is another line of text",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "action": {
-        "content": "Sign Up Today",
-        "url": "#signup",
-        "style": "btn-info"
-      }
-    },
-
-    {
-      "type": "team",
-      "style": "section",
-      "classes": [""],
-      "background": {
-        "image": null,
-        "attachment": null,
-        "parallax": false
-      },
-      "title": "The Team",
-      "subtitle": "Building Today, Shipping Tomorrow.",
-      "members": [
-        {
-          "width": "col-sm-4",
-          "name": "Clark Kent",
-          "body": "blah blah blah",
-          "image": { "url": "/img/user1.png" }
-        },
-        {
-          "width":"col-sm-4",
-          "name": "Monica Rambeau",
-          "body": "blah blah blah",
-          "image": { "url": "/img/user2.png" }
-        },
-        {
-          "width": "col-sm-4",
-          "name": "Tony Stark",
-          "body": "blah blah blah",
-          "image": { "url": "/img/user1.png" }
-        }
-      ]
-    },
-
-    {
-      "type": "footer",
-      "style": "section black",
-      "classes": [""],
-      "title": "Connect with Us",
-      "background": {
-        "image": null,
-        "attachment": null,
-        "parallax": false
-      },
-      "networks": [
-        {
-          "url": "https://github.com/bowtie-io",
-          "icon-class": "fa-github",
-          "icon-sizes": "fa-4x"
-        },
-        {
-          "url": "https://twitter.com/bowtie_io",
-          "icon-class": "fa-twitter",
-          "icon-sizes": "fa-4x"
-        }
-      ]
-    }
-  ]
+	"sections": [
+		{
+			"type": "hero",
+			"style": "section",
+			"classes": [
+				""
+			],
+			"layout": "no-image",
+			"image": {
+				"url": "/img/logo.png",
+				"alt": "Logo"
+			},
+			"background": {
+				"image": null,
+				"attachment": null,
+				"parallax": false
+			},
+			"title": "We are Heroes 1",
+			"subtitle": "We're launching with ⋈ BowTie.io",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"action": {
+				"content": "Learn More",
+				"url": "#features",
+				"style": null
+			}
+		},
+		{
+			"type": "navigation",
+			"layout": "navbar",
+			"style": "color",
+			"classes": [
+				"hidden-xl"
+			],
+			"brand": {
+				"image": {
+					"url": "/img/logo.png"
+				},
+				"content": null
+			},
+			"links": [
+				{
+					"action": "generic",
+					"linkType": "text",
+					"content": "Features",
+					"href": "#features"
+				},
+				{
+					"action": "sign_in",
+					"linkType": "text",
+					"content": "Sign In",
+					"href": "/users/sign_in"
+				},
+				{
+					"action": "sign_up",
+					"linkType": "text",
+					"content": "Register",
+					"href": "/users/sign_up"
+				},
+				{
+					"action": "sign_out",
+					"linkType": "text",
+					"content": "Sign Out",
+					"href": "/users/sign_out"
+				},
+				{
+					"action": "account",
+					"linkType": "text",
+					"content": "My Account",
+					"href": "/users/edit"
+				},
+				{
+					"action": "generic",
+					"linkType": "text",
+					"content": "Contact",
+					"href": "#connect"
+				}
+			]
+		},
+		{
+			"type": "email-signup",
+			"style": "section-alt",
+			"classes": [
+				""
+			],
+			"list": "sample",
+			"countdown": {
+				"date": "2015/11/15",
+				"complete": "Get ready. We're about to blow up."
+			},
+			"background": {
+				"image": null,
+				"attachment": null,
+				"parallax": false
+			},
+			"title": "Join Our Beta!",
+			"subtitle": ""
+		},
+		{
+			"type": "features",
+			"style": "section",
+			"classes": [
+				""
+			],
+			"background": {
+				"image": null,
+				"attachment": null,
+				"parallax": true
+			},
+			"title": "All the Things",
+			"subtitle": "Are there more things to be had?",
+			"columns": [
+				{
+					"width": "col-sm-6",
+					"title": "Code Well",
+					"subtitle": "Feature 1 Sub",
+					"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+					"icon": {
+						"class": "fa-code-fork",
+						"image": null,
+						"content": null
+					}
+				},
+				{
+					"width": "col-sm-6",
+					"title": "Ship Fast",
+					"subtitle": "Feature 2 Sub",
+					"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit 2.",
+					"icon": {
+						"class": null,
+						"image": {
+							"url": "/img/rocket.png",
+							"alt": "Feature 2"
+						},
+						"content": null
+					}
+				}
+			]
+		},
+		{
+			"type": "generic",
+			"style": "section-alt",
+			"classes": [
+				""
+			],
+			"layout": null,
+			"image": null,
+			"background": {
+				"image": {
+					"url": "/img/backgrounds/bg2.jpg"
+				},
+				"attachment": "tile",
+				"parallax": true
+			},
+			"title": "Lorem Ipsum Contentum",
+			"subtitle": "This is another line of text",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"action": {
+				"content": "Sign Up Today",
+				"url": "#signup",
+				"style": "btn-info"
+			}
+		},
+		{
+			"type": "team",
+			"style": "section",
+			"classes": [
+				""
+			],
+			"background": {
+				"image": null,
+				"attachment": null,
+				"parallax": false
+			},
+			"title": "The Team",
+			"subtitle": "Building Today, Shipping Tomorrow.",
+			"members": [
+				{
+					"width": "col-sm-4",
+					"name": "Clark Kent",
+					"body": "blah blah blah",
+					"image": {
+						"url": "/img/user1.png"
+					}
+				},
+				{
+					"width": "col-sm-4",
+					"name": "Monica Rambeau",
+					"body": "blah blah blah",
+					"image": {
+						"url": "/img/user2.png"
+					}
+				},
+				{
+					"width": "col-sm-4",
+					"name": "Tony Stark",
+					"body": "blah blah blah",
+					"image": {
+						"url": "/img/user1.png"
+					}
+				}
+			]
+		},
+		{
+			"type": "footer",
+			"style": "section black",
+			"classes": [
+				""
+			],
+			"title": "Connect with Us",
+			"background": {
+				"image": null,
+				"attachment": null,
+				"parallax": false
+			},
+			"networks": [
+				{
+					"url": "https://github.com/bowtie-io",
+					"icon-class": "fa-github",
+					"icon-sizes": "fa-4x"
+				},
+				{
+					"url": "https://twitter.com/bowtie_io",
+					"icon-class": "fa-twitter",
+					"icon-sizes": "fa-4x"
+				}
+			]
+		}
+	]
 }
