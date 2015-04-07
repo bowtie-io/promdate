@@ -13,7 +13,7 @@
 
 
 html {
-	background-color:#2c3e50;
+	background-color:#ed4b86;
 	}
 
 #pagewrapper {
@@ -336,7 +336,7 @@ width: 100%;
 .error-icons h1.fa-stack-1x {
 font-size: 6em;
 color: #F5C16E;
-font-family: "Lato", "Helvetica Neue", "Ubuntu", sans-serif;
+font-family: "nunito", "Helvetica Neue", "nunito", sans-serif;
 font-weight:300 !important;
 text-shadow: -2px -1px 0px #F4B857 !important;
 margin-top:-15px !important;
@@ -373,14 +373,14 @@ input.remote-error:invalid {
 		body, p{
 			font-size:15px;
 			font-weight:400;
-			font-family:lato, helvetica, sans-serif;
+			font-family:'cabin', helvetica, sans-serif;
 		}
 		h2 {
 			font-size:1.85em;
-			font-weight:400;
+			font-weight:bold;
 			margin:1.5em 0 .5em;
-			color:#333;
-			font-family:lato, helvetica, sans-serif;
+			color:#000;
+			font-family:'nunito', helvetica, sans-serif;
 		}
 		h3 {
 			font-size:1.5em;
@@ -524,6 +524,9 @@ input.remote-error:invalid {
 #hero.image-tagline img.logo {
   width: 150px;
   padding: 0px 0 70px;
+}
+#hero h2{
+	color:#fff;
 }
 .clearfix {
 	*zoom: 1;
@@ -869,7 +872,7 @@ text-align:center;
 
 body,
 html {
-	font-family: "Lato", "Helvetica Neue", "Ubuntu", sans-serif; font-weight:300;
+	font-family: "cabin", "Helvetica Neue", sans-serif; font-weight:300;
 }
 
 h1,
@@ -877,7 +880,7 @@ h2,
 h3,
 h4,
 h5 {
-	font-weight: 300;  font-family: "Ubuntu", sans-serif; letter-spacing:.025em;
+	font-weight: 400;  font-family: "nunito", sans-serif; letter-spacing:.025em;
 
 }
 
@@ -919,7 +922,7 @@ z-index:200;
 	border-right: none;
 	border-top: none;
 	border-radius: 0;
-	background-color:#2c3e50;
+	background-color:#000;
 	font-weight:400;
 	letter-spacing:.025em;
 	box-shadow:0 1px 4px rgba(0, 0, 0, 0.1);
@@ -953,7 +956,8 @@ float:right;
 	color:#fff;
 }
 .nav > li > a:hover, .nav > li > a:focus {
-background-color:#142537 !important;
+background-color:#ffef06 !important;
+color:#000 !important;
 }
 
 .navbar-brand{
@@ -996,19 +1000,19 @@ text-align:center;
 }
 
 h1 {
-font-weight: 400;  font-family: "Ubuntu", sans-serif; letter-spacing:.025em; text-transform:uppercase; line-spacing:1;
+font-weight: 400;  font-family: "nunito", sans-serif; letter-spacing:.025em; text-transform:uppercase; line-spacing:1;
 text-shadow:0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .feature .title {
-font-weight: 500 !important;
+font-weight: bold !important;
 margin: 0;
 line-height: 1;
 }
 
 
 h3 {
-font-weight: 300 !important;  font-family: "Lato","Ubuntu","Roboto", sans-serif; letter-spacing:.025em; font-size:20px; text-transform:uppercase; line-spacing:1.5;
+font-weight: 300 !important;  font-family: "nunito", sans-serif; letter-spacing:.025em; font-size:20px; text-transform:uppercase; line-spacing:1.5;
 }
 
 h2 {
@@ -1036,15 +1040,15 @@ color:#444;
 					outline:none;
 }
 .btn-default {
-  background: #16a085;
+  background: #FFEF06;
   color: #fff;
 	border-color: #ccc;
   border-radius: 0;
 }
 
 .btn-default:hover {
-  background: #fff;
-  color: #333333;
+  background: #000;
+  color: #fff;
 }
 #schemes .backgrounds a.active {
   border-color: #333333;
@@ -1706,7 +1710,7 @@ color:#eee !important;
 }
 
 .section.color p{
-color:#333 !important;
+color:#000 !important;
 }
 
 .section.black p, .section.gradient p {
@@ -1714,7 +1718,7 @@ color:#eee !important;
 }
 
 .section.color {
-background-color:#95a5a6;
+background-color:#56b3f5;
 background-size: 100% auto;
 }
 
@@ -1791,7 +1795,7 @@ background-repeat:repeat !important;
 /*******************************************************/
 
 .bg, .bg2 {
-background-image: url('/img/backgrounds/bg2.jpg');
+background-image: url('/img/backgrounds/bg@2x.gif');
 background-repeat:repeat;
 height:100vh;
 }
@@ -1928,7 +1932,7 @@ margin: -5px 0 0 0;
 }
 
 .pricing {
-	font-family:"Ubuntu";
+	font-family:"nunito";
 color:#369;}
 
 .panel {
@@ -2277,7 +2281,7 @@ padding: 60px 20px !important;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-		border:1px solid #CCCCCC;
+		border:1px solid #FFEF06;
 	}
 	.form-stretch .input-append button,
 	.form-stretch .input-prepend button,

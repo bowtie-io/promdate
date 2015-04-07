@@ -1,11 +1,30 @@
 {
   "sections": [
-
+    {
+      "type": "hero",
+      "style": "section",
+      "classes": [""],
+      "layout": "image-center",
+      "image": {
+        "url": "/img/prom-date-logo.png",
+        "alt": "Logo"
+      },
+      "background": {
+        "image": {
+          "url": "/img/backgrounds/bg2.png"
+        },
+        "attachment": "tile",
+        "parallax": true
+      },
+      "title": "Prom Date",
+      "subtitle": "Where Products and Users Go on Their First Date",
+      "body": ""
+    },
     {
       "type": "navigation",
-      "layout": "navbar",
+      "layout": "navbarfixed",
       "style": "color",
-      "classes": ["hidden-xl"],
+      "classes": [""],
       "brand": {
         "image": { "url": "/img/logo.png" },
         "content": null
@@ -49,7 +68,119 @@
         }
       ]
     },
+    {
+      "type": "email-signup",
+      "style": "section color",
+      "classes": [""],
+      "list": "sample",
+      "countdown": {
+        "date": "2015/11/15",
+        "complete": "Get ready. We're about to blow up."
+      },
+      "background": {
+        "image": null,
+        "attachment": null,
+        "parallax": false
+      },
+      "title": "Join Our Beta!",
+      "subtitle": ""
+    },
 
+    {
+      "type": "features",
+      "style": "section color",
+      "classes": [""],
+      "background": {
+        "image": null,
+        "attachment": null,
+        "parallax": true
+      },
+      "title": "All the Things",
+      "subtitle": "Are there more things to be had?",
+      "columns": [
+        {
+          "width":        "col-sm-6",
+          "title":        "Code Well",
+          "subtitle":     "Feature 1 Sub",
+          "content":      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "icon": {
+            "class": "fa-code-fork",
+            "image": null,
+            "content": null
+          }
+        },
+        {
+          "width":        "col-sm-6",
+          "title":        "Ship Fast",
+          "subtitle":     "Feature 2 Sub",
+          "content":      "Lorem ipsum dolor sit amet, consectetur adipiscing elit 2.",
+          "icon": {
+            "class": null,
+            "image": {
+              "url": "/img/rocket.png",
+              "alt": "Feature 2"
+            },
+            "content": null
+          }
+        }
+      ]
+    },
+
+    {
+      "type": "generic",
+      "style": "section-alt",
+      "classes": [""],
+      "layout": null,
+      "image": null,
+      "background": {
+        "image": {
+          "url": "/img/backgrounds/bg@2x.gif"
+        },
+        "attachment": "tile",
+        "parallax": true
+      },
+      "title": "Lorem Ipsum Contentum",
+      "subtitle": "This is another line of text",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "action": {
+        "content": "Sign Up Today",
+        "url": "#signup",
+        "style": "btn-info"
+      }
+    },
+
+    {
+      "type": "team",
+      "style": "section",
+      "classes": [""],
+      "background": {
+        "image": null,
+        "attachment": null,
+        "parallax": false
+      },
+      "title": "The Team",
+      "subtitle": "Building Today, Shipping Tomorrow.",
+      "members": [
+        {
+          "width": "col-sm-4",
+          "name": "Clark Kent",
+          "body": "blah blah blah",
+          "image": { "url": "/img/user1.png" }
+        },
+        {
+          "width":"col-sm-4",
+          "name": "Monica Rambeau",
+          "body": "blah blah blah",
+          "image": { "url": "/img/user2.png" }
+        },
+        {
+          "width": "col-sm-4",
+          "name": "Tony Stark",
+          "body": "blah blah blah",
+          "image": { "url": "/img/user1.png" }
+        }
+      ]
+    },
 
     {
       "type": "footer",
@@ -65,12 +196,12 @@
         {
           "url": "https://github.com/bowtie-io",
           "icon-class": "fa-github",
-          "icon-sizes": "fa-4x"
+          "icon-sizes": "fa-2x"
         },
         {
-          "url": "https://twitter.com/bowtie_io",
+          "url": "https://twitter.com/promdate_io",
           "icon-class": "fa-twitter",
-          "icon-sizes": "fa-4x"
+          "icon-sizes": "fa-2x"
         }
       ]
     }
