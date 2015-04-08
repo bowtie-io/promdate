@@ -24,3 +24,18 @@ permalink: /browse/
 
       </ul>
   </div>
+
+
+<script type="text/javascript">
+    bowtie.user.info(function(user){
+      if(user){
+        $('.signed-in').show();
+
+        var overEZ = new dmProject("pr_T1zlkx2h", user);
+        overEZ.get_potential_matches();
+
+      }else{
+        $('.signed-out').show();
+      }
+    });
+</script>
