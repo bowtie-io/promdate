@@ -13,7 +13,7 @@
 			},
 			"background": {
 				"image": {
-					"url": "/img/backgrounds/bg2.png"
+					"url": "/img/backgrounds/bg.gif"
 				},
 				"attachment": "tile",
 				"parallax": true
@@ -131,7 +131,7 @@
 			"style": "section color",
 			"background": {
 				"image": {
-					"url": "/img/backgrounds/bg@2x.gif"
+					"url": "/img/backgrounds/bg.gif"
 				},
 				"attachment": "tile",
 				"parallax": true
