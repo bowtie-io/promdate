@@ -251,21 +251,28 @@ small.description, span.hint {
 }
 
 .error_notification {
-				float: left;
-				padding:3px 3px 5px;
+	float: left;
+	padding:3px 3px 5px;
 }
 
 .alert, .error_notification {
-	box-shadow: 1px 1px 2px #BBBBBB;
+	box-shadow: 1px 1px 2px #333;
 	text-align:center;
 	border-radius:0;
 	border: 0 none;
-	color: #333;
+	color: #000;
 	font-style: italic;
 	font-weight: 400;
 	width: 100%;
 	background-color: #f39c12;
 	border-color: #f39c12;
+}
+
+.close {
+	font-size: 21px;
+	color: #000;
+	text-shadow: none;
+	opacity: 0.5;
 }
 
 .alert-alert, .alert-danger {
@@ -342,6 +349,7 @@ font-weight:300 !important;
 text-shadow: -2px -1px 0px #F4B857 !important;
 margin-top:-15px !important;
 }
+
  h2.error-icon-msg{
 	color: #F5C16E !important;
 }
