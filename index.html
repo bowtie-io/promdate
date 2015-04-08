@@ -31,7 +31,7 @@ layout: splash
 
                 {{#if action}}
                   <a href="{{{action.url}}}">
-                    <button class="btn {{{or action.style 'btn-default'}}}">{{action.content}}</button>
+                    <button class="btn {{{or action.style 'btn-info'}}}">{{action.content}}</button>
                   </a>
                 {{/if}}
               </div>
@@ -44,7 +44,7 @@ layout: splash
                 <div class="navbar-inner" id="navbarinner">
                   <!-- Brand and toggle grouped for mobile display -->
                   <div class="navbar-header">
-                    <button type="button" class="navbar-toggle btn-default" data-toggle="collapse" data-target=".navbar-1-collapse">
+                    <button type="button" class="navbar-toggle btn-transparent" data-toggle="collapse" data-target=".navbar-1-collapse">
                       <span class="sr-only">Toggle navigation</span>
                       <span class="fa fa-bars fa-lg"></span>
                       <span>&nbsp;Menu</span>
@@ -142,11 +142,11 @@ layout: splash
                 {{/if}}
 
                 {{#if subtitle}}
-                  <h3>{{subtitle}}</h3>
+                  <h3>{{{subtitle}}}</h3>
                 {{/if}}
 
                 {{#if body}}
-                  <p class="text-center area">{{body}}</p>
+                  <p class="text-center area">{{{body}}}</p>
                 {{/if}}
 
                 {{#if action}}
@@ -187,7 +187,7 @@ layout: splash
                     {{/if}}
                     <div class="input-append">
                       <input type="text" name="prospect[email]" type="text" placeholder="Email Address">
-                      <button class="btn btn-default" type="submit">Sign Up</button>
+                      <button class="btn btn-success" type="submit">Sign Up</button>
                     </div>
                     <p class="help-block text-muted">We won't spam or sell your email.</p>
                   </div>
@@ -281,7 +281,7 @@ layout: splash
                 </div>
 
                 <div class="row subfooter">
-                  <p>Made with <a href="http://bowtie.io">⋈ Bow Tie</a>.</p>
+                  <p>Made with <a href="https://bowtie.io">⋈ Bow Tie</a>.</p>
                 </div>
               </div>
             </footer>

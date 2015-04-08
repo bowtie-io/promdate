@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
 
   <body class="bg">
     <div class="jk">
+      {% include flash.html %}
+      {% include header.html %}
 
-    {% include header.html %}
-
-    <div id="content">
-      <div class="section">
-        <div class="wrapper">
-          {{ content }}
+      <div id="content">
+        <div class="section">
+          <div class="wrapper">
+            {{ content }}
+          </div>
         </div>
       </div>
-    </div>
 
-    {% include footer.html %}
-
+      {% include footer.html %}
     </div>
   </body>
 

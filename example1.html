@@ -1,0 +1,107 @@
+---
+layout: splash
+---
+
+<div id="content">
+
+  <div id="nav" class="navbar hidden-xl color navbar" style="" data-spy="affix" data-offset-top="250">
+              <nav class="navbar " role="navigation">
+                <div class="navbar-inner" id="navbarinner">
+                 <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse navbar-1-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li class="navbar-icons signed-out">
+                          <a href="/users/sign_in">
+                            Sign In
+                          </a>
+                        </li>
+                        <li class="navbar-icons signed-out" style="">
+                          <a href="/users/sign_up">
+                            Register
+                          </a>
+                        </li>
+                        <li class="navbar-icons signed-in" style="display: list-item; display:none;">
+                          <a href="/users/sign_out">
+                            Sign Out
+                          </a>
+                        </li>
+                        <li class="navbar-icons signed-in" style="display: list-item; display:none;">
+                          <a href="/users/edit">
+                            My Account
+                          </a>
+                        </li>
+
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.navbar-inner -->
+              </nav><!--.navbar -->
+            </div>
+
+
+            <h1 style="text-align:center; margin-top:20px !Important;">DonorMatch</h1>
+
+
+          <div style="text-align:center; font-size:1.4em; margin:15px;">
+            <a href="#" class="potential_link">Potentials</a> |
+            <a href="#" class="matched_link">Matches</a>
+          </div>
+
+
+            <div class="potentials" style="display: none;">
+
+                <ul id="potential_matches">
+
+                </ul>
+            </div>
+
+
+
+
+            <div class="actuals" style="display: none;">
+                <ul id="actual_matches">
+
+                </ul>
+            </div>
+
+
+
+            <footer id="footer" class=" section black" style="">
+                          <div class="container">
+                            <div class="row social-media">
+                                <div>
+                                    <a href="https://github.com/bowtie-io" target="_blank">
+                                      <i class="fa fa-github fa-4x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/bowtie_io" target="_blank">
+                                      <i class="fa fa-twitter fa-4x"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row subfooter">
+                              <p>Made with <a href="http://bowtie.io">⋈ Bow Tie</a>.</p>
+                            </div>
+                          </div>
+                        </footer>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+
+    bowtie.user.info(function(user){
+      if(user){
+        $('.signed-in').show();
+
+        var overEZ = new dmProject("pr_UA9OFWTr", user);
+        overEZ.get_potential_matches();
+
+      }else{
+        $('.signed-out').show();
+      }
+    });
+</script>

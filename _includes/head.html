@@ -6,7 +6,10 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />  
+
+<!-- Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300,300italic|Lato:400,100,300,300italic,700,400italic' rel='stylesheet' type='text/css'>
 
   <script type="text/javascript" src="/vendor/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="https://bowtie.io/assets/bowtie.js"></script>
@@ -18,6 +21,7 @@
 
   <script type="text/javascript" src="/js/prospect.js"></script>
   <script type="text/javascript" src="/js/countdown.js"></script>
+  <script type="text/javascript" src="/js/flash.js"></script>
   <script type="text/javascript" src="/js/smoothscroll.js"></script>
 
   <link href="/css/main.css" rel="stylesheet">
