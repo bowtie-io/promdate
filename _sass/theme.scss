@@ -369,6 +369,7 @@ input.remote-error:invalid {
 		}
 		h1, h2, h3, h4, p {
 			text-align:left;
+			text-shadow:none;
 		}
 		body, p{
 			font-size:15px;
@@ -1161,7 +1162,7 @@ color:#444;
 .form-bloat input:focus {
 	font-size: 18px;
 	color:#fff !important;
-	background-color:#000000;
+	background-color:#EC4A85;
 }
 
 .form-bloat button {
