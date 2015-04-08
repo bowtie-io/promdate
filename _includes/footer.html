@@ -1,11 +1,13 @@
 <footer id="footer" class="section">
+  <a name="connect"></a>
   <div class="container">
+    {% include social-links.html %}
     <div class="row subfooter">
-      {% include social-links.html %}
       <p>Made with <a href="https://bowtie.io">⋈ Bow Tie</a>.</p>
     </div>
   </div>
 </footer>
+
 
 {% if site.google_analytics_id %}
   <!-- Google Analytics (http://google.com/analytics) -->
