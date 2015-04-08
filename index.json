@@ -142,17 +142,17 @@
 		},
 		{
 			"type": "team",
-			"style": "section color",
-			"classes": [
-				""
-			],
+			"title": "We Built This",
+			"subtitle": null,
 			"background": {
 				"image": null,
 				"attachment": null,
 				"parallax": false
 			},
-			"title": "We Built This",
-			"subtitle": null,
+			"classes": [
+				""
+			],
+			"style": "section color",
 			"members": [
 				{
 					"width": "col-sm-6",
@@ -164,11 +164,11 @@
 				},
 				{
 					"width": "col-sm-6",
-					"name": "Chad Person",
-					"body": "I am on the Internet",
 					"image": {
 						"url": "/img/chad-person.jpg"
-					}
+					},
+					"name": "Chad Person",
+					"body": "I Eat Dogfood and Like It"
 				}
 			]
 		},
