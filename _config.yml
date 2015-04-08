@@ -1,6 +1,4 @@
 # Site settings
-title: Prom Date - Where Products and Users Go on Their First Date
-description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: "Prom Date - Where Products + Users Share Their First Dance"
+email: info@bowtie.io
+description: Prom Date matches products with early adopters for feedback and beta testing. Swipe to match and download a list of specialized testers in minutes.

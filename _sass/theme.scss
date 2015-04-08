@@ -412,11 +412,9 @@ input.remote-error:invalid {
 		}
 		}
 		.site-header {
-			border-bottom: 1px solid #666;
 			border-left: none;
 			border-right: none;
 			border-top: none;
-			background-color: #2c3e50;
 			font-weight:400;
 			letter-spacing:.025em;
 			box-shadow:0 1px 4px rgba(0, 0, 0, 0.1);
@@ -436,7 +434,8 @@ input.remote-error:invalid {
 				}
 		}
 		.navbar-brand img {
-			height:16px;
+			height: 40px;
+			margin-top: -6px;
 		}
 		table{
 			display: block;
@@ -478,8 +477,6 @@ input.remote-error:invalid {
 			}
 			a:hover, a:focus {
 				text-decoration:none;
-				color:#FFF !important;
-				background-color:#142537 !important;
 			}
 			.menu-icon{
 				width: auto;
@@ -490,10 +487,15 @@ input.remote-error:invalid {
 		li > ul, li > ol {
 	    margin-bottom: 10px !important;
 		}
+		.wrapper{
+			padding-left:auto;
+			padding-right:auto;
+		}
 }
 
 .navbar-brand img {
-	height:16px;
+	height: 40px;
+	margin-top: -6px;
 }
 
 /*******************************************************/
@@ -880,8 +882,10 @@ h2,
 h3,
 h4,
 h5 {
-	font-weight: 400;  font-family: "nunito", sans-serif; letter-spacing:.025em;
-
+	font-weight: 400;
+	font-family: "nunito", sans-serif;
+	letter-spacing:.025em;
+  font-weight: bold;
 }
 
 h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6{
@@ -889,10 +893,10 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6{
 }
 
 h1 {
-	font-size: 32px; color: #333;
+	font-size: 32px; color: #333;text-shadow: 2px 2px 0px #127ac1;
 }
 h2 {
-	font-size: 26px;
+	font-size: 26px;text-shadow: 2px 2px 0px #127ac1;
 }
 h3 {
 	font-size: 20px;
@@ -917,7 +921,6 @@ z-index:200;
 }
 
 #nav .navbar, #nav .navbarfixed {
-	border-bottom: 1px solid #666;
 	border-left: none;
 	border-right: none;
 	border-top: none;
@@ -955,13 +958,13 @@ float:right;
 .navbar li a:hover, .navbar a:hover, .navbar i:hover {
 	color:#fff;
 }
-.nav > li > a:hover, .nav > li > a:focus {
+.nav a:hover, .nav a:focus {
 background-color:#ffef06 !important;
 color:#000 !important;
 }
 
 .navbar-brand{
-	padding-top:13px;
+	padding-top:11px;
 }
 .nav > li > a > img{
 	height:14px;
@@ -1000,8 +1003,7 @@ text-align:center;
 }
 
 h1 {
-font-weight: 400;  font-family: "nunito", sans-serif; letter-spacing:.025em; text-transform:uppercase; line-spacing:1;
-text-shadow:0 1px 2px rgba(0, 0, 0, 0.3);
+font-weight: 400;  font-family: "nunito", sans-serif; letter-spacing:.025em; text-transform:uppercase; line-spacing:1;text-shadow: 2px 2px 0px #127ac1;
 }
 
 .feature .title {
@@ -1242,18 +1244,29 @@ color:#444;
 
 
 .btn-default {
-	color: #fff;
-	background-color: #16a085;
-	border-color: #CCCCCC;
+	color: #ec4a85;
+	border-width: 2px;
+	border-color: #ffef06;
+	border-style: solid;
+	background-color: #ffef06;
+	box-shadow: 8px 8px #ed4b86;
+	font-size: large;
+	font-family: "Nunito";
+	font-weight: bold;
+	line-height: 1.0;
+	text-align: center;
+	padding:10px 16px;
+	margin-bottom:20px;
 }
 
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active {
-color: #000;
-	background-color: #fff;
-}
+	background-color: #ed4b86;
+	border-color: #ffef06;
+	color:#fff;
+	}
 
 .btn-default.disabled,
 .btn-default[disabled],
@@ -1374,17 +1387,23 @@ fieldset[disabled] .btn-danger.active {
 }
 
 .btn-success {
-	color: #ffffff;
-	background-color: #61b34d;
-	border-color: #61b34d;
+	color: #ec4a85;
+	border-width: 2px;
+	border-color: #ffef06;
+	border-style: solid;
+	background-color: #ffef06;
+	font-family: "Nunito";
+	font-weight: bold;
+	line-height: 1.0;
+	text-align: center;
 }
 
 .btn-success:hover,
 .btn-success:focus,
 .btn-success:active,
 .btn-success.active {
-	background-color: #528942;
-	border-color: #528942;
+	color: #000;
+	background-color: #fff;
 }
 
 .btn-success.disabled,
@@ -1478,9 +1497,9 @@ fieldset[disabled] .btn-link:focus {
 }
 
 .btn-transparent {
-	color: #333333;
+	color: #FFF;
 	background-color:	transparent;
-	border-color: #CCCCCC;
+	border-color: transparent;
 }
 .btn-transparent:hover,
 .btn-transparent:active,
@@ -1820,9 +1839,9 @@ outline:none !important;
 
 #footer {
 padding: 15px 0;
-color: #eee;
+color: #fff;
 text-align: center;
-background: #2c3e50;
+background: #000;
 border-top: 1px solid #777;
 }
 #footer .subfooter {
@@ -2221,6 +2240,7 @@ padding: 60px 20px !important;
 		top: 0;
 		width: 100%;
 	}
+
 	#hero .logo-display {
 		margin-top: 30px;
 	}
