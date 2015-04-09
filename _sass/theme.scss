@@ -83,6 +83,7 @@ html {
   background: rgba(255, 255, 255, 0.65);
 	border:1px solid #CCC !important;
 	padding:25px 5px;
+	max-height:680px;
 		}
 	h1, h2, h3, h4 {
 	text-align:center !important;
@@ -101,6 +102,83 @@ html {
 	text-align: center;
 }
 
+img.avatar{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+	max-height:250px;
+	max-width:250px;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+
+ul#potential_matches a, ul#actual_matches  a {
+display:inline-block;
+background-color: grey;
+padding:5px 15px;
+text-align:center;
+margin: 0 auto;
+font-weight: bold;
+color: #fff;
+font-size:1.4em;
+}
+
+ul#potential_matches a#ya, ul#actual_matches  a#ya {
+	background-color: #54a31f;
+}
+
+ul#potential_matches a#na, ul#actual_matches  a#na {
+	background-color: #c44141;
+}
+
+ul#potential_matches, ul#actual_matches {
+	width:94%;
+	max-width:460px;
+	margin: 0 auto;
+	display:block;
+	position:relative;
+}
+
+.actuals.matches-table{
+	.panel {
+	box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.65);
+	border:1px solid #CCC !important;
+	padding:25px 5px;
+	max-height:680px;
+		}
+	h1, h2, h3, h4 {
+	text-align:left !important;
+		}
+	h3, h2{
+		margin:20px 0 !important;color:#000 !important;
+		}
+	ul, li {list-style:none;margin-left:0;}
+	.label {
+		font-size:1.25em;margin:0 5px 10px;}
+	.label-warning {
+		background-color:#ED4B86;}
+	img {
+	border:1px solid #CCC;
+		}
+	text-align: center;
+	img.avatar{
+		height: auto;
+		margin: 0 auto;
+		display: block;
+		max-height:90px;
+		max-width:90px;
+	}
+	ul#actual_matches {
+		width:100%;
+		max-width:none;
+	}
+}
 
 /*******************************************************/
 /*** registration devise views ***/
@@ -457,7 +535,7 @@ input.remote-error:invalid {
 .jk {
 	#content {
 		.section{
-		 padding:50px 0;
+		 padding-top:2vh !important;
 		}
 		.post-title,.page-heading {
 			font-size:2.25em;
