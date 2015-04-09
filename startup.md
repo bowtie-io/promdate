@@ -2,10 +2,12 @@
 layout: login
 title: Register your Startup
 permalink: /startup/
+exclude_from_nav: true
+
 ---
 
 ## Register Startup Step 2
-All the things for the user profile here
+All the things for the Startup profile here: logo/img, seeking (tags from pick list), description (text)
 
 <div class='form-group'>
   <form accept-charset="UTF-8" action="/users" class="simple_form new_user" id="new_user" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="FJ7OBAN1qFFlPVrZ6kAHUbtZMxnzri+HU5ffxAAdJJw=" /></div>

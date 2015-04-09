@@ -43,6 +43,12 @@
 					"href": "#features"
 				},
 				{
+					"action": "generic",
+					"linkType": "text",
+					"content": "About",
+					"href": "/about/"
+				},
+				{
 					"action": "sign_in",
 					"linkType": "text",
 					"content": "Sign In",
@@ -65,12 +71,6 @@
 					"linkType": "text",
 					"content": "My Account",
 					"href": "/users/edit"
-				},
-				{
-					"action": "generic",
-					"linkType": "text",
-					"content": "About",
-					"href": "/about/"
 				}
 			]
 		},
