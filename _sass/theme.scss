@@ -204,6 +204,11 @@ html {
 	font-size: 16px;
 	padding: 10px 35px;
 }
+
+.nav > li.signed-out, .nav > li.signed-in {
+	display:none;
+}
+
 .content-wrap .sharedlinks {
 	margin: 2.5em auto 1em;
 	padding:0;
