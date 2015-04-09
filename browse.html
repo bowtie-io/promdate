@@ -7,35 +7,40 @@ permalink: /browse/
 <h1 style="text-align:center; margin-top:20px !Important;">Let's Dance!</h1>
 
 <div style="text-align:center; font-size:1.4em; margin:15px;">
-  <a href="#" class="potential_link">Potentials</a> |
-  <a href="#" class="matched_link">Matches</a>
+  <a href="#" class="potential_link btn btn-default">Potentials</a>
+  <a href="#" class="matched_link btn btn-success">Matches</a>
 </div>
 
-  <div class="potentials" style="display: none;">
+  <div class="potentials" style="display:;">
 
       <ul id="potential_matches">
-        <li class='"+value+"'>
-            <img src='http://img2.wikia.nocookie.net/__cb20140427211725/dragcave/images/6/6e/No_avatar.jpg' class='avatar'>
-            <br /> id:"+value+"
-            <br /> <strong>Name:</strong><br />"+details.user.name+"
-            <br /><strong>Details: </strong><br> "+details.details+"
-            <br /> <a href='#' id='ya' class='"+value+"'>Ya</a> | <a href='#' id='na' class='"+value+"'>Na</a>
+        <li class='"+value+" panel'>
+            <img src='http://img2.wikia.nocookie.net/__cb20140427211725/dragcave/images/6/6e/No_avatar.jpg' class='img-circle avatar'>
+            <h2 class="text-center">"+details.user.name+" </h2>
+            <h3>Looking For:</h3><ul><li class="label label-warning">tag 1</li><li class="label label-warning">tag2</li><li class="label label-warning">tag3</li></ul>
+            <div class="row btn-group match-btn">
+              <a href='#' id='ya' class='"+value+" btn-circle'><i class="fa fa-check fa-4x"></i><p>Sweet!</p></a><a href='#' id='info' class='"+value+" btn-circle-sm'> <i class="fa fa-info fa-2x"></i></a><a href='#' id='na' class='"+value+" btn-circle'><i class="fa fa-close fa-4x"></i><p>Bogus</p></a>
+            </div>
+        </li>
+      </ul>
+  </div>
+<span class="row"><strong>Description: </strong>"+details.details+" GOES IN CARD POP OVER FROM INFO i</span>
+
+
+  <div class="actuals" style="display: ;">
+      <ul id="actual_matches">
+        <li class='"+value+" panel'>
+          <img src='/img/chad-person.jpg' class='img-circle avatar'>
+          <h2 class="text-center">"+details.user.name+" </h2>
+          <h3>Skills:</h3><ul><li class="label label-warning">tag 1</li><li class="label label-warning">tag2</li><li class="label label-warning">tag3</li></ul>
+          <div class="row btn-group match-btn">
+            <a href='#' id='ya' class='"+value+" btn-circle'><i class="fa fa-check fa-4x"></i><p>Yep!</p></a><a href='#' id='info' class='"+value+" btn-circle-sm'> <i class="fa fa-info fa-2x"></i></a><a href='#' id='na' class='"+value+" btn-circle'><i class="fa fa-close fa-4x"></i><p>Nope</p></a>
+          </div>
         </li>
       </ul>
   </div>
 
-
-  <div class="actuals" style="display: none;">
-      <ul id="actual_matches">
-        <li class='"+value+"'>
-          <img src='http://img2.wikia.nocookie.net/__cb20140427211725/dragcave/images/6/6e/No_avatar.jpg' class='avatar'>
-          <br /> id:"+value+" <br /> <strong>Name:</strong>
-          <br />"+details.user.name+" <br /> <strong>Contact:</strong>
-          <br />"+details.user.email+" <br /><strong>Details: </strong>
-          <br> "+details.details+"<br /> </li>
-      </ul>
-  </div>
-
+<span class="row"><strong>Details: </strong>"+details.details+" GOES IN CARD POP OVER FROM INFO i</span>
 
   <script type="text/javascript">
       bowtie.user.info(function(user){

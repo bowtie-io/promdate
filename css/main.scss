@@ -72,35 +72,18 @@ font-size:1.4em;
 
 
 ul#potential_matches a#ya, ul#actual_matches  a#ya {
-
   background-color: #54a31f;
-
 }
 
-
-
 ul#potential_matches a#na, ul#actual_matches  a#na {
-
   background-color: #c44141;
-
 }
 
 
 ul#potential_matches, ul#actual_matches {
-  width:90%;
+  width:94%;
   max-width:500px;
   margin: 0 auto;
   display:block;
   position:relative;
-}
-
-
-ul#potential_matches li, ul#actual_matches li{
-  padding:15px;
-  list-style:none;
-  display:block;
-  margin: 10px 0;
-  border: 1px solid black;
-  background-color: #bebebeb;
-  text-align:center;
 }
