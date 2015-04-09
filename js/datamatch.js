@@ -1,11 +1,11 @@
+$("html").on("click", "a.export_link", function(e) {
+  $('#myModal').modal('toggle')
+  e.preventDefault();
+});
+
 
 
 function dmProject(project_sid) {
-
-    $("html").on("click", "a.export_link", function(e) {
-      $('#myModal').modal('toggle')
-      e.preventDefault();
-    });
 
 
 
