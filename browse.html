@@ -14,14 +14,25 @@ permalink: /browse/
   <div class="potentials" style="display: none;">
 
       <ul id="potential_matches">
-
+        <li class='"+value+"'>
+            <img src='http://img2.wikia.nocookie.net/__cb20140427211725/dragcave/images/6/6e/No_avatar.jpg' class='avatar'>
+            <br /> id:"+value+"
+            <br /> <strong>Name:</strong><br />"+details.user.name+"
+            <br /><strong>Details: </strong><br> "+details.details+"
+            <br /> <a href='#' id='ya' class='"+value+"'>Ya</a> | <a href='#' id='na' class='"+value+"'>Na</a>
+        </li>
       </ul>
   </div>
 
 
   <div class="actuals" style="display: none;">
       <ul id="actual_matches">
-
+        <li class='"+value+"'>
+          <img src='http://img2.wikia.nocookie.net/__cb20140427211725/dragcave/images/6/6e/No_avatar.jpg' class='avatar'>
+          <br /> id:"+value+" <br /> <strong>Name:</strong>
+          <br />"+details.user.name+" <br /> <strong>Contact:</strong>
+          <br />"+details.user.email+" <br /><strong>Details: </strong>
+          <br> "+details.details+"<br /> </li>
       </ul>
   </div>
 
