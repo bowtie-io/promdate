@@ -1,6 +1,15 @@
-function dmProject(project_sid) {
-    this.project_sid = project_sid;
 
+
+function dmProject(project_sid) {
+
+    $("html").on("click", "a.export_link", function(e) {
+      $('#myModal').modal('toggle')
+      e.preventDefault();
+    });
+
+
+
+    this.project_sid = project_sid;
 
     this.get_potential_matches = function () {
       get_matches();
@@ -98,8 +107,6 @@ function dmProject(project_sid) {
       $(".potentials").hide();
     });
 
-
-
     function get_matches () {
 
     $.ajax({
@@ -143,7 +150,5 @@ function dmProject(project_sid) {
       });
     }
 
-
     }
-
 }

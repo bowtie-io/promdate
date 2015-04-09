@@ -5,6 +5,26 @@ permalink: /matches/
 
 ---
 
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+      <h4 id="myModalLabel">Na na na... you need to upgrade first.</h4>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Upgrade</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 <div class="row">
   <div class="col-xs-8">
   Match count here
@@ -12,7 +32,7 @@ permalink: /matches/
 
   <div class="col-xs-4">
   <div style="text-align:center; font-size:1.4em; margin:15px;">
-    <a href="#" class="matched_link btn btn-success">Export List</a>
+    <a href="#" class="export_link btn btn-success">Export List</a>
   </div>
   </div>
 </div>
@@ -46,10 +66,25 @@ Matched profiles go here - email addresses are not visible unless paid, export b
         <div class="row">
           <h4 class="col-xs-3">Email:</h4>
           <div class="col-xs-9">
-          chad@example.com
+          <a href="#" class="export_link">c***@example.com</a>
           </div>
 
         </div>
       </li>
     </ul>
 </div>
+
+
+<script type="text/javascript">
+    bowtie.user.info(function(user){
+      if(user){
+        $('.signed-in').show();
+
+        var promDate = new dmProject("pr_Tl1Eehzg", user);
+        promDate.get_potential_matches();
+
+      }else{
+        $('.signed-out').show();
+      }
+    });
+</script>
