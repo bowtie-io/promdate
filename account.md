@@ -2,8 +2,105 @@
 layout: account
 title: Profile
 permalink: /profile/
-
 ---
+
 # Edit Profile
 
-this is where profile settings go (I imagine we let them mod their profile info, password settings can be handled by bowtie template)
+<div id="profile" class="user-profile">
+
+  <div class="row">
+    <div class="col-xs-4">
+      <img src='/img/chad-person.jpg' class='img-circle avatar'>
+    </div>
+    <div class="col-xs-8">
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <label for="exampleInputFile">Image input</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">Select a new pic/logo (1MB Max) </p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <br />
+
+  <div class='form-group'>
+    <div class="input string required user_name">
+      <label class="string required" for="user_name">
+      <abbr title="required">*</abbr> Text</label>
+      <input aria-required="true" autofocus="autofocus" class="string required form-control" id="user_name" maxlength="255" name="user[name]" placeholder="Here if you need it" required="required" size="255" type="text" />
+    </div>
+  </div>
+
+  <br>
+
+  <div class='form-group'>
+    <div class="field-box">
+      <label>Tags:</label>
+      <small class="pull-right"> (Select as many as you want)</small>
+    <div class="panel">
+      <ul>
+      <li class="label inactive">tag 1</li>
+      <li class="label">tag2</li>
+      <li class="label">tag3</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class='form-group'>
+    <div class="field-box">
+      <label>Info:</label>
+      <small class="pull-right"> (sell yourself, include profile links, etc.)</small>
+      <textarea class="form-control" rows="4"></textarea>
+    </div>
+  </div>
+
+  <br>
+
+    <form class="form-horizontal" role="form">
+    <div class="form-group row">
+      <label class="col-xs-2" for="email">Name:</label>
+      <div class="col-xs-8">
+        <input type="email" class="form-control disabled" id="email" placeholder="user name" disabled>
+      </div>
+      <div class="col-xs-2">
+        <button class="btn-sm btn btn-primary">Edit</button>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-xs-2" for="email">Email:</label>
+      <div class="col-xs-8">
+        <input type="email" class="form-control disabled" id="email" placeholder="user email" disabled>
+      </div>
+      <div class="col-xs-2">
+        <button class="btn-sm btn btn-primary">Edit</button>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-xs-2" for="email">Pswd:</label>
+      <div class="col-xs-8">
+        <input type="email" class="form-control disabled" id="email" placeholder="********" disabled>
+      </div>
+      <div class="col-xs-2">
+        <button class="btn-sm btn btn-primary">Edit</button>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-xs-2" for="email">Plan:</label>
+      <div class="col-xs-8">
+        <input type="email" class="form-control" id="email" placeholder="User Plan Name" disabled>
+      </div>
+      <div class="col-xs-2">
+        <button class="btn-sm btn btn-primary">Edit</button>
+      </div>
+    </div>
+  </form>
+  <br />
+  <div class='form-actions'>
+    <input class="button btn btn-default" name="commit" type="submit" value="Save" />
+  </div>
+
+</div>

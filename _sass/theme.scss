@@ -180,6 +180,25 @@ ul#potential_matches, ul#actual_matches {
 	}
 }
 
+.modal-header, .modal-body, .modal-footer{
+	border:none;
+	text-align:center;
+	h4{text-align:center !important;}
+}
+#profile{
+	text-align:left !important;
+	label{text-align:left !important;}
+	.label{
+		font-size: 1em;
+		margin: 0px 5px 10px;
+		background-color: #ED4B86;
+	}
+	.label.inactive{
+		background-color: #ccc;
+	}
+	.panel{margin:0;}
+	ul {margin:10px 8px;}
+}
 /*******************************************************/
 /*** registration devise views ***/
 /*******************************************************/
@@ -387,8 +406,9 @@ ul#potential_matches, ul#actual_matches {
 }
 
 small {
-				float: left;
-				font-weight: 400;
+	float: left;
+	font-weight: 400;
+	margin-top: 3px;
 }
 
 small.caps {
