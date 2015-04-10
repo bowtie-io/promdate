@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-
   <body class="bg2">
     <div class="jk">
-      {% include flash.html %}
       {% include header.html %}
-
       <div id="content">
+        {% include flash.html %}
         <div class="section color">
           <div class="wrapper">
             {{ content }}

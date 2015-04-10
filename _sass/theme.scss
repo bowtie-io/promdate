@@ -2309,6 +2309,14 @@ body div#content .signed-in {
 	display: none;
 }
 
+#flash-message{
+	position: relative;
+	z-index: 10000;
+	.alert {
+		margin-bottom:0;
+	}
+}
+
 
 /*******************************************************/
 /*** media queries ***/
