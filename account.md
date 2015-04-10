@@ -67,7 +67,7 @@ permalink: /profile/
         <input type="email" class="form-control disabled" id="email" placeholder="user name" disabled>
       </div>
       <div class="col-xs-2">
-        <button class="btn-sm btn btn-primary">Edit</button>
+        <a class="btn-sm btn btn-primary" href="/users/edit">Edit</a>
       </div>
     </div>
     <div class="form-group row">
@@ -76,7 +76,7 @@ permalink: /profile/
         <input type="email" class="form-control disabled" id="email" placeholder="user email" disabled>
       </div>
       <div class="col-xs-2">
-        <button class="btn-sm btn btn-primary">Edit</button>
+        <a class="btn-sm btn btn-primary" href="/users/edit">Edit</a>
       </div>
     </div>
     <div class="form-group row">
@@ -85,7 +85,7 @@ permalink: /profile/
         <input type="email" class="form-control disabled" id="email" placeholder="********" disabled>
       </div>
       <div class="col-xs-2">
-        <button class="btn-sm btn btn-primary">Edit</button>
+        <a class="btn-sm btn btn-primary" href="/users/edit">Edit</a>
       </div>
     </div>
     <div class="form-group row">
@@ -94,7 +94,7 @@ permalink: /profile/
         <input type="email" class="form-control" id="email" placeholder="User Plan Name" disabled>
       </div>
       <div class="col-xs-2">
-        <button class="btn-sm btn btn-primary">Edit</button>
+        <a class="btn-sm btn btn-primary" href="/users/plan">Edit</a>
       </div>
     </div>
   </form>
