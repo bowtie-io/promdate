@@ -41,6 +41,30 @@
 	a:hover {text-decoration:none;}
 	p{text-align:center !important; margin-top:-8px !important;}
 }
+
+#match-count{
+	background-color: #FFEF06 !important;
+	border: 8px solid #ED4B86 !important;
+	padding: 10px 5px;
+	margin: 5px 0px !important;
+	height: 75px;
+	width: 75px;
+	p {
+		font-size: .9em !important;
+		text-align: center !important;
+		margin-top: -10px;
+		color:#ED4B86 !important
+		}
+	span, span:hover {
+	font-family:'nunito';
+	font-weight:bold;
+	font-size: 1.85em;
+	text-align: center;
+	color:#ED4B86 !important
+		}
+	}
+
+
 .panel > .match-btn > a p {color:#56B3F5 !important;}
 
 .btn-success {
