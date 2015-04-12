@@ -142,10 +142,12 @@ html {
 	img{
 		max-height:100%;
 		max-width:100%;
-		border:1px solid #ccc;
 	}
 }
 
+.img-circle {
+	border:1px solid #ccc;
+}
 
 body{
 	width: 100%;
@@ -2738,6 +2740,10 @@ padding: 60px 20px !important;
 		width: 32px;
 		height: 48px;
 	}
+	.avatar{
+		max-height:200px;
+		max-width:200px;
+	}
 }
 
 @media (max-width: 360px) {
@@ -2771,5 +2777,9 @@ padding: 60px 20px !important;
 	}
 	.error-icons h1.fa-stack-1x {
 	font-size: 4em;
+	}
+	.avatar{
+		max-height:150px;
+		max-width:150px;
 	}
 }
