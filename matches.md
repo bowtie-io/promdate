@@ -5,6 +5,7 @@ permalink: /matches/
 
 ---
 
+
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -40,7 +41,7 @@ permalink: /matches/
   </div>
 </div>
 
-# Matches
+<h1 class="post-title">Matches</h1>
 
 Matched profiles go here - email addresses are not visible unless paid, export button will dump csv if paid OR redirect to upgrade plan page based on the yaml file in this directory
 

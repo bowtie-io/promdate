@@ -1,12 +1,10 @@
 ---
 layout: account
-title: Profile
+title: Edit Profile
 permalink: /profile/
 exclude_from_nav: true
 
 ---
-
-# Edit Profile
 
 <div id="profile" class="user-profile">
 

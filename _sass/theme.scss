@@ -744,11 +744,15 @@ input.remote-error:invalid {
 
 .jk {
 	#content {
-		.section{
+		.section, .section-alt {
 		 padding-top:2vh !important;
 		}
 		.post-title,.page-heading {
 			font-size:2.25em;
+		}
+		.post-title {
+			text-align:center;
+			margin:5px auto;
 		}
 		h1, h2, h3, h4, p {
 			text-align:left;
@@ -2615,11 +2619,24 @@ padding: 60px 20px !important;
 	}
 	.plan.prominent-plan {
 		margin-top: 30px;
-}
-.profilepic {
-	max-width:80%;
-	height:200px;
-}
+	}
+	.profilepic {
+		max-width:80%;
+		height:200px;
+	}
+	.jk #content{
+		.post-title,.page-heading {
+		font-size:2em;
+		text-align: center;
+		margin: 5px auto;
+		position: fixed;
+		top: 1%;
+		z-index: 5000;
+		width: 50%;
+		left: 25%;
+		color:#fff;
+		}
+	}
 }
 
 
@@ -2743,6 +2760,12 @@ padding: 60px 20px !important;
 	.avatar{
 		max-height:200px;
 		max-width:200px;
+	}
+	.jk #content{
+		.post-title,.page-heading {
+		font-size:1.4em;
+		margin:11px auto;
+		}
 	}
 }
 
