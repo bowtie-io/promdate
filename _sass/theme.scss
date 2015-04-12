@@ -2628,14 +2628,18 @@ padding: 60px 20px !important;
 		.post-title,.page-heading {
 		font-size:2em;
 		text-align: center;
-		margin: 5px auto;
 		position: fixed;
-		top: 1%;
+		top: 10px;
 		z-index: 5000;
 		width: 50%;
 		left: 25%;
 		color:#fff;
 		}
+	}
+	#nav .navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
 	}
 }
 
@@ -2652,11 +2656,6 @@ padding: 60px 20px !important;
 	}
 	 .section, .section-alt {
 	 padding: 70px 20px;
-	}
-		#nav .navbar {
-		position: fixed;
-		top: 0;
-		width: 100%;
 	}
 
 	#hero .logo-display {
@@ -2764,7 +2763,7 @@ padding: 60px 20px !important;
 	.jk #content{
 		.post-title,.page-heading {
 		font-size:1.4em;
-		margin:11px auto;
+		top:14px;
 		}
 	}
 }
