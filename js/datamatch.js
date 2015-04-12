@@ -97,6 +97,11 @@ function dmProject(project_sid) {
       });
 
       function show_matches (potentials) {
+
+
+        $("span#match_number").html(potentials.length + "!");
+
+
         $.each(potentials, function(index, value) {
 
           $.ajax({
