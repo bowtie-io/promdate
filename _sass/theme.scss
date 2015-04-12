@@ -124,16 +124,11 @@ html {
 		font-size:1.25em;margin:0 5px 10px;}
 	.label-warning {
 		background-color:#ED4B86;}
-	img {
-	border:1px solid #CCC;
-		}
 	text-align: center;
 	.info_block p{
 		text-align:center;
 	}
 }
-
-
 
 
 .avatar{
@@ -143,9 +138,13 @@ html {
 	display: block;
 	max-height:250px;
 	max-width:250px;
+	overflow:hidden;
 	img{
 		max-height:100%;
 		max-width:100%;
+	}
+	.img-circle{
+		border:1px solid #ccc;
 	}
 }
 
