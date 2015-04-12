@@ -61,16 +61,16 @@
 					"href": "/users/sign_up"
 				},
 				{
-					"action": "sign_out",
-					"linkType": "text",
-					"content": "Sign Out",
-					"href": "/users/sign_out"
-				},
-				{
 					"action": "account",
 					"linkType": "text",
 					"content": "Profile",
 					"href": "/profile/"
+				},
+				{
+					"action": "sign_out",
+					"linkType": "text",
+					"content": "Sign Out",
+					"href": "/users/sign_out"
 				}
 			]
 		},

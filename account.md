@@ -2,6 +2,8 @@
 layout: account
 title: Profile
 permalink: /profile/
+exclude_from_nav: true
+
 ---
 
 # Edit Profile
