@@ -27,7 +27,10 @@ permalink: /matches/
 
 <div class="row">
   <div class="col-xs-8">
-  Match count here
+  <div id="match-count" class="btn-circle-sm">
+    <span>24!</span>
+    <p>Matches</p>
+  </div>
   </div>
 
   <div class="col-xs-4">

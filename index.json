@@ -69,8 +69,8 @@
 				{
 					"action": "account",
 					"linkType": "text",
-					"content": "My Account",
-					"href": "/users/edit"
+					"content": "Profile",
+					"href": "/profile/"
 				}
 			]
 		},
