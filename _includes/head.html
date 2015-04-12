@@ -2,14 +2,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-<!-- Web Fonts -->
-<link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300|Cabin' rel='stylesheet' type='text/css'>
+<!-- Web Fonts should be added to theme.scss using @import-->
 
   <script type="text/javascript" src="/vendor/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="https://bowtie.io/assets/bowtie.js"></script>
@@ -24,7 +24,6 @@
   <script type="text/javascript" src="/js/flash.js"></script>
   <script type="text/javascript" src="/js/smoothscroll.js"></script>
   <script type="text/javascript" src="/js/mobile-helper.js"></script>
-
 
   <link href="/css/main.css" rel="stylesheet">
 </head>
