@@ -114,11 +114,40 @@ function dmProject(project_sid) {
            dataType: "json"
           });
           function fill_match(details){
-            potential_data = "<li class='"+value+"'><img src='http://img2.wikia.nocookie.net/__cb20140427211725/dragcave/images/6/6e/No_avatar.jpg' class='avatar'><br /> id:"+value+" <br /> <strong>Name:</strong><br />"+details.user.name+" <br /> <strong>Contact:</strong><br />"+details.user.email+" <br /><strong>Details: </strong><br> "+details.details+"<br /> </li>";
-            $("#actual_matches").empty();
+            console.log(details);
 
-            $("#actual_matches").append(potential_data);
+            var template = $("#match_template").html();
+            tagged = parse_user_tags(details.tags);
+
+            $("#actual_matches").append(template.
+              replace(/%id%/g, value).
+              replace(/%name%/g, details.user.name).
+              replace(/%tags%/g, tagged).
+              replace(/%email%/g, details.user.email).
+              replace(/%details%/g, details.details));
+
+
+
           }
+
+
+          function parse_user_tags(tags){
+            if(tags){
+              tag_ar = tags.split(", ")
+              var tag_group = "";
+              $.each( tag_ar, function( key, value ) {
+                tag_group = tag_group.concat('<li class="label label-warning">'+value+'</li>');
+              });
+              return tag_group;
+            }else{
+              return "no tags";
+            }
+          }
+
+
+
+
+
         });
       }
 
