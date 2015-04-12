@@ -108,7 +108,7 @@ html {
 	.panel {
 	box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  background: #abd9fa;
+  background: rgba(255, 255, 255, 0.65);
 	border:1px solid #CCC !important;
 	padding:25px 5px;
 	margin:5px 0px 15px;
@@ -124,25 +124,28 @@ html {
 		font-size:1.25em;margin:0 5px 10px;}
 	.label-warning {
 		background-color:#ED4B86;}
+	img {
+	border:1px solid #CCC;
+		}
 	text-align: center;
 	.info_block p{
 		text-align:center;
 	}
 }
 
+
+
+
 .avatar{
-	margin: 0px auto;
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
 	display: block;
-	max-height: 250px;
-	max-width: 250px;
-	width: 30%;
-	height: 30%;
-	overflow: hidden;
-	border-radius: 50%;
-	border: 1px solid rgb(204, 204, 204);
+	max-height:250px;
+	max-width:250px;
 	img{
-		height:100%;
-		width:100%;
+		max-height:100%;
+		max-width:100%;
 	}
 }
 
@@ -164,7 +167,7 @@ span.close{
 
 
 
-#potential_match_template {
+#potential_matches {
 li{
 	position:relative;
 }
@@ -197,17 +200,10 @@ li{
 	a#na, ul#actual_matches  a#na {
 		background-color: #c44141;
 	}
-	li, ul#actual_matches {
-		margin: 0 auto;
-		display:block;
-		position:relative;
-		width:96%;
-		max-width:460px;
-	}
+	max-width:460px;
+	margin: 0 auto;
+	display:block;
 	position:relative;
-	width:96%;
-	left:2%;
-	z-index:1;
 }
 
 
@@ -215,10 +211,10 @@ li{
 	.panel {
 	box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
-	background: #abd9fa;
+	background: rgba(255, 255, 255, 0.65);
 	border:1px solid #CCC !important;
 	padding:25px 5px;
-	max-height:680px;
+	max-height:630px;
 		}
 	h1, h2, h3, h4 {
 	text-align:left !important;
@@ -342,11 +338,6 @@ li{
 	    transform: rotate(360deg);
 	  }
 	}
-	z-index: 0;
-	position: fixed;
-	width: 50%;
-	left: 25%;
-	top: 20%;
 }
 
 /*******************************************************/
