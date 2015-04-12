@@ -13,7 +13,7 @@ permalink: /matches/
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
-      <h4 id="myModalLabel">Na na na... you need to upgrade first.</h4>
+      <h4 id="myModalLabel">Only 'Pro' users can view/export email addresses... you need to upgrade first.</h4>
 
       </div>
       <div class="modal-footer">
@@ -44,7 +44,7 @@ permalink: /matches/
 
 Matched profiles go here - email addresses are not visible unless paid, export button will dump csv if paid OR redirect to upgrade plan page based on the yaml file in this directory
 
-<div class="actuals matches-table" style="display: ;">
+<div class="actuals matches-table" style="display:none;">
     <ul id="actual_matches">
       <li class='"+value+" panel text-left'>
         <div class="row">

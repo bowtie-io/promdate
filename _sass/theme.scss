@@ -586,6 +586,9 @@ li{
 	height:30px;
 }
 
+.page-title h1 {
+	margin: 0 auto;
+}
 /*/// Add .ir class to replace text with logo.png image ///*/
 
 .ir {
@@ -1288,7 +1291,7 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6{
 }
 
 h1 {
-	font-size: 32px; color: #333;text-shadow: 2px 2px 0px #127ac1;
+	font-size: 30px; color: #333;text-shadow: 2px 2px 0px #127ac1;
 }
 h2 {
 	font-size: 26px;text-shadow: 2px 2px 0px #127ac1;
