@@ -6,36 +6,33 @@ permalink: /browse/
 
 <h1 style="text-align:center; margin-bottom:20px !Important;">Let's Dance!</h1>
 
-  <div class="potentials" style="display:;">
-
+  <div class="potentials" style="height:610px; overflow: hidden;">
       <ul id="potential_matches">
-        <li class='"+value+" panel'>
-            <img src='http://img2.wikia.nocookie.net/__cb20140427211725/dragcave/images/6/6e/No_avatar.jpg' class='img-circle avatar'>
-            <h2 class="text-center">"+details.user.name+" </h2>
-            <h3>Looking For:</h3><ul><li class="label label-warning">tag 1</li><li class="label label-warning">tag2</li><li class="label label-warning">tag3</li></ul>
-            <div class="row btn-group match-btn">
-              <a href='#' id='ya' class='"+value+" btn-circle'><i class="fa fa-check fa-4x"></i><p>Sweet!</p></a><a href='#' id='info' class='"+value+" btn-circle-sm'> <i class="fa fa-info fa-2x"></i></a><a href='#' id='na' class='"+value+" btn-circle'><i class="fa fa-close fa-4x"></i><p>Bogus</p></a>
-            </div>
-        </li>
       </ul>
-  </div>
-<span class="row"><strong>Description: </strong>"+details.details+" GOES IN CARD POP OVER FROM INFO i</span>
-
-
-  <div class="actuals" style="display: ;">
-      <ul id="actual_matches">
-        <li class='"+value+" panel'>
-          <img src='/img/chad-person.jpg' class='img-circle avatar'>
-          <h2 class="text-center">"+details.user.name+" </h2>
-          <h3>Skills:</h3><ul><li class="label label-warning">tag 1</li><li class="label label-warning">tag2</li><li class="label label-warning">tag3</li></ul>
-          <div class="row btn-group match-btn">
-            <a href='#' id='ya' class='"+value+" btn-circle'><i class="fa fa-check fa-4x"></i><p>Yep!</p></a><a href='#' id='info' class='"+value+" btn-circle-sm'> <i class="fa fa-info fa-2x"></i></a><a href='#' id='na' class='"+value+" btn-circle'><i class="fa fa-close fa-4x"></i><p>Nope</p></a>
-          </div>
-        </li>
-      </ul>
+    <div style="clear:both;">
   </div>
 
-<span class="row"><strong>Details: </strong>"+details.details+" GOES IN CARD POP OVER FROM INFO i</span>
+<div id="potential_match_template" style="display:none;">
+  <li class='panel' id="%id%">
+      <img src='http://img2.wikia.nocookie.net/__cb20140427211725/dragcave/images/6/6e/No_avatar.jpg' class='img-circle avatar'>
+      <h2 class="text-center">%name%</h2>
+      <h3>Looking For:</h3>
+      <ul>%tags%</ul>
+      <div class="row btn-group match-btn">
+        <a href='#' id='ya' class='btn-circle' data-user="%id%">
+          <i class="fa fa-check fa-4x"></i>
+          <p>Sweet!</p></a><a href='#' id='info' class='btn-circle-sm' data-user="%id%">
+          <i class="fa fa-info fa-2x"></i></a>
+        <a href='#' id='na' class='btn-circle' data-user="%id%">
+          <i class="fa fa-close fa-4x"></i><p>Bogus</p></a>
+      </div>
+      <div class="info_block">
+        <span class="close">x</span>
+        <h3>Details:</h3>
+        <p>%details%</p>
+      </div>
+  </li>
+</div>
 
   <script type="text/javascript">
       bowtie.user.info(function(user){
@@ -46,6 +43,7 @@ permalink: /browse/
           promDate.get_potential_matches();
 
         }else{
+          window.location.replace("/");
           $('.signed-out').show();
         }
       });

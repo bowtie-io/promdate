@@ -107,7 +107,7 @@ html {
   background: rgba(255, 255, 255, 0.65);
 	border:1px solid #CCC !important;
 	padding:25px 5px;
-	max-height:680px;
+	margin:5px 0px 15px;
 		}
 	h1, h2, h3, h4 {
 	text-align:center !important;
@@ -124,6 +124,9 @@ html {
 	border:1px solid #CCC;
 		}
 	text-align: center;
+	.info_block p{
+		text-align:center;
+	}
 }
 
 img.avatar{
@@ -138,6 +141,38 @@ img.avatar{
 body{
 	width: 100%;
 	height: 100%;
+}
+
+
+ul#potential_matches li{
+	position:relative;
+}
+
+
+ul#potential_matches .info_block{
+	padding-top:20px;
+	height: 250px;
+	width: 100%;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	margin-left: -5px;
+	display:none;
+}
+
+span.close{
+	color: #000;
+	font-weight:bold;
+	position: absolute;
+	right:22px;
+	top:15px;
+	display:block;
+	font-size:2em;
+}
+
+
+ul#potential_matches .info_block{
+	p{text-align:center;}
 }
 
 ul#potential_matches a, ul#actual_matches  a {
