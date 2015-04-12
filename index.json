@@ -121,7 +121,7 @@
 			"type": "generic",
 			"title": "Testing a Beta or New Feature?",
 			"subtitle": "Use Prom Date to hook up in seconds.",
-			"body": "You can sign up for PromDate and help ohter like-minded makers build better things (it's awesome, and mostly free). It's basically tinder for user testing. <br />The app was originally built as a simple static app during the inaugural <a href=\"https://springboard.bowtied.io\" target=\"blank\">BowTie Springboard</a> contest. The founders of <a href=\"https://bowtie.io\" target=\"blank\">BowTie.io</a> liked it so much that we asked the creator to deploy it as a demo for the BowTie.io static hosting platform. If you want to see how PromDate works, take a gander at our github page, or get in read the BowTie docs - but don't be a creep.",
+			"body": "You can sign up for Prom Date and help other like-minded makers build better things! It's awesome - basically tinder for user testing. <br />This app was originally built for the inaugural <a href=\"https://springboard.bowtied.io\" target=\"blank\">BowTie Springboard</a> contest. The founders of <a href=\"https://bowtie.io\" target=\"blank\">BowTie.io</a> liked it so much that we asked the creator to deploy it as a demo for the BowTie.io static hosting platform. If you want to see how Prom Date works, take a gander at our github page, or read the BowTie docs - but don't be a creep.",
 			"image": null,
 			"action": {
 				"content": "Find Testers",

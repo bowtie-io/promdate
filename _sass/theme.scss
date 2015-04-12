@@ -62,8 +62,10 @@
 	text-align: center;
 	color:#ED4B86 !important
 		}
-	}
-
+}
+#match-count.btn-circle-sm {
+	box-shadow:none !important;
+}
 
 .panel > .match-btn > a p {color:#56B3F5 !important;}
 
@@ -129,14 +131,19 @@ html {
 	}
 }
 
-img.avatar{
+.avatar{
 	width: 80%;
 	height: auto;
 	margin: 0 auto;
 	display: block;
 	max-height:250px;
 	max-width:250px;
+	img{
+		max-height:100%;
+		max-width:100%;
+	}
 }
+
 
 body{
 	width: 100%;
