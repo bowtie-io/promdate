@@ -81,7 +81,7 @@ Matched profiles go here - email addresses are not visible unless paid, export b
         $('.signed-in').show();
 
         var promDate = new dmProject("pr_Tl1Eehzg", user);
-        promDate.get_potential_matches();
+        promDate.get_actual_matches();
 
       }else{
         $('.signed-out').show();
