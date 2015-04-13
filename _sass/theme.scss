@@ -2768,26 +2768,25 @@ padding: 60px 20px !important;
 		}
 	}
 	.match-btn {
-		i, a i {margin:0 !important;color:#127AC1;}
+		i, a i {margin:0 !important;color:#127AC1;font-size:3em;}
 		a:hover i{color:#fff !important;}
 		a:hover {text-decoration:none;}
 		p{text-align:center !important; margin-top:-8px !important;}
 	}
-
+	.match-btn .fa-info{
+		font-size:2em;padding:4px;
+	}
 	.btn-circle{
 		border-radius: 50% !important;
 		height: 100px;
 		width: 100px;
 		border: 10px solid #f6f6f6;
-		margin: 5px !important;
+		margin: 4px !important;
 		text-align: center;
 		color:#127AC1 !important;
 		background:#fff !important;
 		font-size:.8em;
 		box-shadow: 2px 2px 0px #127AC1;
-	}
-	.match-btn i, .match-btn a i{
-		font-size:3em;
 	}
 	#potential_matches a, #potential_matches ul#actual_matches a {
     padding: 2px 12px;
