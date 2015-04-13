@@ -2692,12 +2692,14 @@ padding: 60px 20px 0 !important;
 		width: 50%;
 		left: 25%;
 		color:#fff;
+		-webkit-transform: translateZ(0);
 		}
 	}
 	#nav .navbar {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	-webkit-transform: translateZ(0);
 	}
 }
 
