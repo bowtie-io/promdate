@@ -1374,6 +1374,7 @@ z-index:200;
 	position: fixed;
 	top: 0;
 	width: 100%;
+	-webkit-transform: translateZ(0);
 }
 
 .navbar i {
