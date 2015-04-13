@@ -43,7 +43,7 @@ permalink: /matches/
 
 <h1 class="post-title">Matches</h1>
 
-Your matches are displayed below. Email addresses become visible and can be exported if you upgrade.
+Your matches are below. Email addresses become visible and can be exported if you upgrade ($3). Get to work! 
 
 <div class="actuals matches-table">
     <ul id="actual_matches">
@@ -76,7 +76,7 @@ Your matches are displayed below. Email addresses become visible and can be expo
     <h4>Email:</h4>
     <p><a href="#" class="export_link">%email%</a></p>
   </div>
-  
+
   <div class="info_block">
     <span class="close">x</span>
     <h4>Details:</h4>
