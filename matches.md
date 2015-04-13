@@ -49,13 +49,16 @@ bowtie.user.info(function(user){
 
 <h1 class="post-title">Matches</h1>
 
-Your matches are below. Email addresses become visible and can be exported if you upgrade ($3). Get to work! 
+Your matches are below. Email addresses become visible and can be exported if you upgrade ($3). Get to work!
 
 <div class="actuals matches-table">
     <ul id="actual_matches">
 
     </ul>
 </div>
+
+
+<div id="match_template" style="display:none;">
 
 
 <li class='panel text-left'>
@@ -72,13 +75,10 @@ Your matches are below. Email addresses become visible and can be exported if yo
         %tags%
       </ul>
     </div>
-    <!-- <div class="row btn-group match-btn col-xs-3">
-      <a href='#' id='info' class='"+value+" btn-circle-sm'> <i class="fa fa-info fa-2x"></i></a>
-    </div> -->
   </div>
   <div class="info_block">
     <h4>Email:</h4>
-    <p><a href="#" class="export_link">%email%</a></p>
+    <p><a href="#">%email%</a></p>
   </div>
 
   <div class="info_block">
@@ -98,9 +98,14 @@ Your matches are below. Email addresses become visible and can be exported if yo
     bowtie.user.info(function(user){
       if(user){
         $('.signed-in').show();
-
         var promDate = new dmProject("pr_Tl1Eehzg", user);
         promDate.get_actual_matches();
+
+        if(user.plan =="Tester"){
+          $('.export_link').hide();
+        }
+
+
       }
     });
 </script>
