@@ -137,7 +137,7 @@ bowtie.user.info(function(user){
       $(".edit_tester_profile").hide();
     }
 
-    $("#user_name").val(user.plan);
+    $("#user_name").val(user.name);
     $("#user_email").val(user.email);
     $("#user_plan").val(user.plan);
 
