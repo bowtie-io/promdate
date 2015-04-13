@@ -1369,7 +1369,7 @@ z-index:200;
 	margin-bottom: 0 !important;
 	min-height:0;
 }
-.navbarfixed, .site-header {
+.navbarfixed {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -2725,7 +2725,6 @@ padding: 60px 20px 0 !important;
 	}
 	.site-header{
 	min-height:56px;
-	position:fixed;
 	}
 	.site-title {
 		line-height:56px;
