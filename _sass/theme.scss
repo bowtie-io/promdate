@@ -176,7 +176,7 @@ li{
 }
 .info_block{
 	padding-top:20px;
-	height: 250px;
+	min-height: 250px;
 	width: 100%;
 	background-color: #ffffff;
 	position: absolute;
@@ -185,7 +185,10 @@ li{
 	display:none;
 	}
 	.info_block{
-		p{text-align:center;}
+		p{
+			text-align:center;
+			padding: 0px 25px;
+		}
 	}
 	a, ul#actual_matches  a {
 	display:inline-block;
