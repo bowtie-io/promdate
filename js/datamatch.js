@@ -7,6 +7,7 @@ function dmProject(project_sid, user) {
     this.project_sid = project_sid;
     this.user = user;
 
+
     this.get_potential_matches = function() {
         $.ajax({
             type: "GET",
@@ -80,6 +81,8 @@ function dmProject(project_sid, user) {
             });
         }
     }
+
+
     this.get_actual_matches = function() {
         $.ajax({
             type: "GET",
@@ -123,8 +126,7 @@ function dmProject(project_sid, user) {
 
                 function fill_match(details) {
                     console.log(details);
-                    var template = $("#match_template")
-                        .html();
+                    var template = $("#match_template").html();
                     tagged = parse_user_tags(details.tags);
                     $("#actual_matches").append(
                         template.replace(/%id%/g,
