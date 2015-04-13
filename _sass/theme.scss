@@ -450,9 +450,10 @@ span.close{
 	.list-group-item {
     position: relative;
     display: block;
+		text-align:left;
     padding: 10px 15px;
     margin-bottom: -1px;
-    background-color: none;
+    background: none;
     border: 1px solid #EC4A85;
 	}
 }
