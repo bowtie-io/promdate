@@ -97,7 +97,6 @@
 	border-color: #fff;
 }
 
-
 html {
 	background-color:#ed4b86;
 	}
@@ -105,6 +104,7 @@ html {
 #pagewrapper {
 	position:relative;
 }
+
 .potentials, .actuals{
 	.panel {
 	box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
@@ -135,11 +135,11 @@ html {
 		font-weight: normal;
 	}
 	.label-warning {
-		background-color:#ED4B86;}
-	text-align: center;
-	.info_block p{
+		background-color:#ED4B86;
+		}
+	.info_block p {
 		text-align:center;
-	}
+	 }
 	ul.tags {
 		word-break: break-all;
 		text-align: center;
@@ -232,7 +232,6 @@ span.close{
 		}
 	}
 }
-
 
 .actuals.matches-table{
 	.panel {
@@ -2885,4 +2884,5 @@ padding: 60px 20px !important;
 			width:50px;
 			margin:7px auto 0;
 		}
+	}
 }
