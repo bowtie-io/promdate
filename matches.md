@@ -49,7 +49,7 @@ bowtie.user.info(function(user){
 
 <h1 class="post-title">Matches</h1>
 
-Your matches are displayed below. Email addresses become visible and can be exported if you upgrade.
+Your matches are below. Email addresses become visible and can be exported if you upgrade ($3). Get to work! 
 
 <div class="actuals matches-table">
     <ul id="actual_matches">
@@ -65,9 +65,9 @@ Your matches are displayed below. Email addresses become visible and can be expo
     </div>
     <h3 class="text-center col-xs-9">%name%</h3>
   </div>
-
+  <br />
   <div class="row">
-    <div class="col-xs-9">
+    <div class="col-xs-12">
       <ul>
         %tags%
       </ul>
@@ -76,18 +76,14 @@ Your matches are displayed below. Email addresses become visible and can be expo
       <a href='#' id='info' class='"+value+" btn-circle-sm'> <i class="fa fa-info fa-2x"></i></a>
     </div> -->
   </div>
-  <div class="row">
-    <h4 class="col-xs-3">Email:</h4>
-    <div class="col-xs-9">
-    <a href="#" class="export_link">%email%</a>
-    </div>
-
+  <div class="info_block">
+    <h4>Email:</h4>
+    <p><a href="#" class="export_link">%email%</a></p>
   </div>
-
 
   <div class="info_block">
     <span class="close">x</span>
-    <h3>Details:</h3>
+    <h4>Details:</h4>
     <p>%details%</p>
   </div>
 

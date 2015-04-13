@@ -117,20 +117,44 @@ html {
 	h1, h2, h3, h4 {
 	text-align:center !important;
 		}
-	h3, h2{
-		margin:20px 0 !important;color:#000 !important;
+	h2{
+		margin:15px 0px 5px !important;color:#000 !important;
 		}
+	h3 {
+		margin:20px;
+	}
 	ul, li {list-style:none;margin-left:0;}
 	.label {
-		font-size:1.25em;margin:0 5px 10px;}
+		font-size: 1.1em;
+		display: block;
+		float: left;
+		text-align: center;
+		margin: 2px 5px;
+		width: auto;
+		letter-spacing: .05em;
+		font-weight: normal;
+	}
 	.label-warning {
 		background-color:#ED4B86;}
 	text-align: center;
 	.info_block p{
 		text-align:center;
 	}
+	ul.tags {
+		word-break: break-all;
+		text-align: center;
+		padding: 0 3% 20px;
+		display:table;
+	}
 }
 
+.info_block p a{
+	color:#ED4B86 !important;
+	margin:0;
+	padding:0;
+	font-size:inherit;
+	background:none;
+}
 
 #profile-tags li {
 	line-height:2.4em;
@@ -219,7 +243,7 @@ li{
 	border-radius: 5px;
 	background: rgba(255, 255, 255, 0.65);
 	border:1px solid #CCC !important;
-	padding:25px 5px;
+	padding:15px 25px;
 	max-height:630px;
 		}
 	h1, h2, h3, h4 {
@@ -228,9 +252,12 @@ li{
 	h3, h2{
 		margin:20px 0 !important;color:#000 !important;
 		}
+	h4{
+		margin:0 0 5px;
+	}
 	ul, li {list-style:none;margin-left:0;}
 	.label {
-		font-size:1.25em;margin:0 5px 10px;}
+		font-size:1em;}
 	.label-warning {
 		background-color:#ED4B86;}
 	img {
@@ -241,8 +268,8 @@ li{
 		height: auto;
 		margin: 0 auto;
 		display: block;
-		max-height:90px;
-		max-width:90px;
+		height:70px;
+		width:70px;
 	}
 	ul#actual_matches {
 		width:100%;
@@ -787,7 +814,7 @@ input.remote-error:invalid {
 		h4 {
 			font-size:1em;
 			font-weight:600;
-			margin:1.5em 0 .5em;
+			margin:1.0em 0 .5em;
 			color:#333 !important;
 			text-transform:uppercase;
 		}
@@ -2761,12 +2788,6 @@ padding: 60px 20px !important;
 	.social-media a {
 		margin: 0 0.2em;
 	}
-	.social-media a i {
-		font-size: 48px;
-		line-height: 48px;
-		width: 32px;
-		height: 48px;
-	}
 	.avatar{
 		max-height:200px;
 		max-width:200px;
@@ -2852,4 +2873,19 @@ padding: 60px 20px !important;
 	#potential_matches a, #potential_matches ul#actual_matches a {
 		padding: 1px 10px;
 	}
+	ul.tags {
+		padding: 0 !important;
+		display:table;
+	}
+	.jk #content h4 {
+    font-size: 1em;
+    font-weight: 600;
+    margin: .5em 0px .5em;
+	}
+	.actuals.matches-table{
+		img.avatar{
+			height:50px;
+			width:50px;
+			margin:7px auto 0;
+		}
 }
