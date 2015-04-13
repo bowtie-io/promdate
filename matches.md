@@ -45,38 +45,55 @@ permalink: /matches/
 
 Your matches are displayed below. Email addresses become visible and can be exported if you upgrade.
 
-<div class="actuals matches-table" style="display:none;">
+<div class="actuals matches-table">
     <ul id="actual_matches">
-      <li class='"+value+" panel text-left'>
-        <div class="row">
-          <div class="col-xs-3">
-            <img src='/img/avatar.gif' class='img-circle avatar'>
-          </div>
-          <h3 class="text-center col-xs-9">"+details.user.name+" </h3>
-        </div>
 
-        <div class="row">
-          <div class="col-xs-9">
-            <ul>
-              <li class="label label-warning">tag 1</li>
-              <li class="label label-warning">tag2</li>
-              <li class="label label-warning">tag3</li>
-            </ul>
-          </div>
-          <div class="row btn-group match-btn col-xs-3">
-            <a href='#' id='info' class='"+value+" btn-circle-sm'> <i class="fa fa-info fa-2x"></i></a>
-          </div>
-        </div>
-        <div class="row">
-          <h4 class="col-xs-3">Email:</h4>
-          <div class="col-xs-9">
-          <a href="#" class="export_link">c***@example.com</a>
-          </div>
-
-        </div>
-      </li>
     </ul>
 </div>
+
+
+<div id="match_template" style="display:none;">
+
+<li class='panel text-left'>
+  <div class="row">
+    <div class="col-xs-3">
+      <img src='/img/avatar.gif' class='img-circle avatar'>
+    </div>
+    <h3 class="text-center col-xs-9">%name%</h3>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-9">
+      <ul>
+        %tags%
+      </ul>
+    </div>
+    <!-- <div class="row btn-group match-btn col-xs-3">
+      <a href='#' id='info' class='"+value+" btn-circle-sm'> <i class="fa fa-info fa-2x"></i></a>
+    </div> -->
+  </div>
+  <div class="row">
+    <h4 class="col-xs-3">Email:</h4>
+    <div class="col-xs-9">
+    <a href="#" class="export_link">%email%</a>
+    </div>
+
+  </div>
+
+
+  <div class="info_block">
+    <span class="close">x</span>
+    <h3>Details:</h3>
+    <p>%details%</p>
+  </div>
+
+
+
+</li>
+
+</div>
+
+
 
 
 <script type="text/javascript">
