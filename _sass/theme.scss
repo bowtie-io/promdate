@@ -437,6 +437,25 @@ span.close{
 		border-style: solid;
 	}
 }
+.project-wrapper {
+	.panel-heading{
+		text-align:left;
+	}
+	.panel ul{
+		margin-left:0;
+	}
+	.panel-body{
+		padding:0;
+	}
+	.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: none;
+    border: 1px solid #EC4A85;
+	}
+}
 
 #owner_credit_card_expiration panel input:focus,
 {
