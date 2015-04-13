@@ -61,7 +61,7 @@ Your matches are displayed below. Email addresses become visible and can be expo
     </div>
     <h3 class="text-center col-xs-9">%name%</h3>
   </div>
-
+  <br />
   <div class="row">
     <div class="col-xs-9">
       <ul>
@@ -74,16 +74,16 @@ Your matches are displayed below. Email addresses become visible and can be expo
   </div>
   <div class="row">
     <h4 class="col-xs-3">Email:</h4>
-    <div class="col-xs-9">
+    <h4 class="col-xs-9">
     <a href="#" class="export_link">%email%</a>
-    </div>
+    </h4>
 
   </div>
 
 
   <div class="info_block">
     <span class="close">x</span>
-    <h3>Details:</h3>
+    <h4>Details:</h4>
     <p>%details%</p>
   </div>
 

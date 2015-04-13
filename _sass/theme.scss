@@ -236,7 +236,7 @@ li{
 	border-radius: 5px;
 	background: rgba(255, 255, 255, 0.65);
 	border:1px solid #CCC !important;
-	padding:25px 5px;
+	padding:15px 25px;
 	max-height:630px;
 		}
 	h1, h2, h3, h4 {
@@ -250,7 +250,7 @@ li{
 	}
 	ul, li {list-style:none;margin-left:0;}
 	.label {
-		font-size:1.25em;margin:0 5px 10px;}
+		font-size:1em;margin:0 5px 10px;}
 	.label-warning {
 		background-color:#ED4B86;}
 	img {
@@ -261,8 +261,8 @@ li{
 		height: auto;
 		margin: 0 auto;
 		display: block;
-		max-height:90px;
-		max-width:90px;
+		height:70px;
+		width:70px;
 	}
 	ul#actual_matches {
 		width:100%;
