@@ -124,9 +124,6 @@ html {
 		font-size:1.25em;margin:0 5px 10px;}
 	.label-warning {
 		background-color:#ED4B86;}
-	img {
-	border:1px solid #CCC;
-		}
 	text-align: center;
 	.info_block p{
 		text-align:center;
@@ -146,12 +143,16 @@ html {
 	display: block;
 	max-height:250px;
 	max-width:250px;
+	overflow:hidden;
 	img{
 		max-height:100%;
 		max-width:100%;
 	}
 }
 
+.img-circle {
+	border:1px solid #ccc;
+}
 
 body{
 	width: 100%;
@@ -580,6 +581,9 @@ li{
 	height:30px;
 }
 
+.page-title h1 {
+	margin: 0 auto;
+}
 /*/// Add .ir class to replace text with logo.png image ///*/
 
 .ir {
@@ -745,11 +749,15 @@ input.remote-error:invalid {
 
 .jk {
 	#content {
-		.section{
+		.section, .section-alt {
 		 padding-top:2vh !important;
 		}
 		.post-title,.page-heading {
 			font-size:2.25em;
+		}
+		.post-title {
+			text-align:center;
+			margin:5px auto;
 		}
 		h1, h2, h3, h4, p {
 			text-align:left;
@@ -1282,7 +1290,7 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6{
 }
 
 h1 {
-	font-size: 32px; color: #333;text-shadow: 2px 2px 0px #127ac1;
+	font-size: 30px; color: #333;text-shadow: 2px 2px 0px #127ac1;
 }
 h2 {
 	font-size: 26px;text-shadow: 2px 2px 0px #127ac1;
@@ -2616,11 +2624,28 @@ padding: 60px 20px !important;
 	}
 	.plan.prominent-plan {
 		margin-top: 30px;
-}
-.profilepic {
-	max-width:80%;
-	height:200px;
-}
+	}
+	.profilepic {
+		max-width:80%;
+		height:200px;
+	}
+	.jk #content{
+		.post-title,.page-heading {
+		font-size:2em;
+		text-align: center;
+		position: fixed;
+		top: 10px;
+		z-index: 5000;
+		width: 50%;
+		left: 25%;
+		color:#fff;
+		}
+	}
+	#nav .navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	}
 }
 
 
@@ -2636,11 +2661,6 @@ padding: 60px 20px !important;
 	}
 	 .section, .section-alt {
 	 padding: 70px 20px;
-	}
-		#nav .navbar {
-		position: fixed;
-		top: 0;
-		width: 100%;
 	}
 
 	#hero .logo-display {
@@ -2741,6 +2761,16 @@ padding: 60px 20px !important;
 		width: 32px;
 		height: 48px;
 	}
+	.avatar{
+		max-height:200px;
+		max-width:200px;
+	}
+	.jk #content{
+		.post-title,.page-heading {
+		font-size:1.4em;
+		top:14px;
+		}
+	}
 }
 
 @media (max-width: 360px) {
@@ -2774,5 +2804,9 @@ padding: 60px 20px !important;
 	}
 	.error-icons h1.fa-stack-1x {
 	font-size: 4em;
+	}
+	.avatar{
+		max-height:150px;
+		max-width:150px;
 	}
 }
