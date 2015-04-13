@@ -35,7 +35,15 @@ function dmProject(project_sid, user) {
                         project_sid: project_sid
                     },
                     success: function(data) {
+                      console.log(data.plan);
+                      console.log(user.plan);
+
+                      if(data.plan != user.plan){
+                        if (data.plan.indexOf(user.plan) == -1 && user.plan.indexOf(data.plan) == -1){
                         fill_user(data);
+                        }
+                      }
+                      
                     },
                     error: function(xhr, status,
                         err) {
@@ -114,8 +122,8 @@ function dmProject(project_sid, user) {
                         project_sid: project_sid
                     },
                     success: function(data) {
-                        console.log(data);
-                        fill_match(data)
+
+                        fill_match(data);
                     },
                     error: function(xhr, status,
                         err) {
@@ -127,7 +135,9 @@ function dmProject(project_sid, user) {
                 });
 
                 function fill_match(details) {
+
                     console.log(details);
+
                     var template = $("#match_template").html();
                     tagged = parse_user_tags(details.tags);
                     $("#actual_matches").append(
