@@ -2393,7 +2393,12 @@ color:#369;}
 .panel-primary{
 border:1px solid #CCCCCC;
 }
-
+#plans{
+	.project-wrapper h2 {
+		color: #000;
+		text-shadow: none;
+	}
+}
 .plan {
 		margin: 30px -5px 0px;
 		text-align: center;
@@ -2406,7 +2411,6 @@ border:1px solid #CCCCCC;
 		color: rgba(0, 0, 0, 1);
 		min-height: 230px;
 		margin-bottom:15px;
-		border-bottom:#efefef 1px solid;
 	}
 	.plan .plan-features {
 			color: rgba(0, 0, 0, 0.8);
