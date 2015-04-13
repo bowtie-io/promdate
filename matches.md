@@ -63,7 +63,7 @@ Your matches are displayed below. Email addresses become visible and can be expo
   </div>
   <br />
   <div class="row">
-    <div class="col-xs-9">
+    <div class="col-xs-12">
       <ul>
         %tags%
       </ul>
@@ -72,15 +72,11 @@ Your matches are displayed below. Email addresses become visible and can be expo
       <a href='#' id='info' class='"+value+" btn-circle-sm'> <i class="fa fa-info fa-2x"></i></a>
     </div> -->
   </div>
-  <div class="row">
-    <h4 class="col-xs-3">Email:</h4>
-    <h4 class="col-xs-9">
-    <a href="#" class="export_link">%email%</a>
-    </h4>
-
+  <div class="info_block">
+    <h4>Email:</h4>
+    <p><a href="#" class="export_link">%email%</a></p>
   </div>
-
-
+  
   <div class="info_block">
     <span class="close">x</span>
     <h4>Details:</h4>
