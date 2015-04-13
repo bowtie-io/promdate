@@ -139,6 +139,13 @@ html {
 	text-align: center;
 	.info_block p{
 		text-align:center;
+		a{
+			color:#ED4B86 !important;
+			margin:0;
+			padding:0;
+			font-size:inherit;
+			background:none;
+		}
 	}
 	ul.tags {
 		word-break: break-all;
