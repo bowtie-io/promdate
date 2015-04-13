@@ -10,7 +10,7 @@ exclude_from_nav: true
 
 
 <!-- TESTER -->
-<div id="edit_tester_profile" style="display:none;">
+<div id="edit_tester_profile">
   <div id="profile" class="user-profile">
 
     <div class="row">
@@ -34,7 +34,8 @@ exclude_from_nav: true
     <div class='form-group'>
       <div class="field-box">
         <label>Tags:</label>
-        <small class="pull-right"> (Select as many as you want)</small>
+        <small class="pull-right edit_startup_profile"> (Select desired Tester skills)</small>
+        <small class="pull-right edit_tester_profile"> (Select as many as you want)</small>
       <div class="panel">
         <ul id="profile-tags">
         <li class="label inactive">Frontend</li>
@@ -60,7 +61,8 @@ exclude_from_nav: true
     <div class='form-group'>
       <div class="field-box">
         <label>Info:</label>
-        <small class="pull-right"> (sell yourself, include profile links, etc.)</small>
+        <small class="pull-right edit_startup_profile"> (Elevator pitch, link to project, etc)</small>
+        <small class="pull-right edit_tester_profile"> (sell yourself, include profile links, etc.)</small>
         <textarea class="form-control" id="user_details" rows="4"></textarea>
       </div>
     </div>
@@ -114,107 +116,6 @@ exclude_from_nav: true
 </div>
 
 
-<!-- STARTUP -->
-
-<div id="edit_startup_profile" style="display:none;">
-  <div id="profile" class="user-profile">
-    <div class="row">
-      <div class="col-xs-4">
-        <img src='/img/bowtie-io-logo.png' class='img-circle avatar'>
-      </div>
-      <div class="col-xs-8">
-        <form class="form-inline" role="form">
-          <div class="form-group">
-            <label for="exampleInputFile">Logo</label>
-            <input type="file" id="exampleInputFile">
-            <p class="help-block">Select a new Img (1MB Max) </p>
-          </div>
-        </form>
-      </div>
-    </div>
-    <br />
-
-    <div class='form-group'>
-      <div class="input string required user_name">
-        <label class="string required" for="user_name">
-        <abbr title="required">*</abbr> Text</label>
-        <input aria-required="true" autofocus="autofocus" class="string required form-control" id="user_name" maxlength="255" name="user[name]" placeholder="Here if you need it" required="required" size="255" type="text" />
-      </div>
-    </div>
-
-    <br>
-
-    <div class='form-group'>
-      <div class="field-box">
-        <label>Tags:</label>
-        <small class="pull-right"> (Select desired Tester skills)</small>
-      <div class="panel">
-        <ul>
-        <li class="label inactive">tag 1</li>
-        <li class="label">tag2</li>
-        <li class="label">tag3</li>
-        </ul>
-      </div>
-      </div>
-    </div>
-
-    <br>
-
-    <div class='form-group'>
-      <div class="field-box">
-        <label>Info:</label>
-        <small class="pull-right"> (Elevator pitch, project link, etc.)</small>
-        <textarea class="form-control" rows="4"></textarea>
-      </div>
-    </div>
-
-    <br>
-
-      <form class="form-horizontal" role="form">
-      <div class="form-group row">
-        <label class="col-xs-2" for="email">Name:</label>
-        <div class="col-xs-8">
-          <input type="email" class="form-control disabled" id="email" placeholder="user name" disabled>
-        </div>
-        <div class="col-xs-2">
-          <a class="btn-sm btn btn-primary" href="/users/edit">Edit</a>
-        </div>
-      </div>
-      <div class="form-group row">
-        <label class="col-xs-2" for="email">Email:</label>
-        <div class="col-xs-8">
-          <input type="email" class="form-control disabled" id="email" placeholder="user email" disabled>
-        </div>
-        <div class="col-xs-2">
-          <a class="btn-sm btn btn-primary" href="/users/edit">Edit</a>
-        </div>
-      </div>
-      <div class="form-group row">
-        <label class="col-xs-2" for="email">Pswd:</label>
-        <div class="col-xs-8">
-          <input type="email" class="form-control disabled" id="email" placeholder="********" disabled>
-        </div>
-        <div class="col-xs-2">
-          <a class="btn-sm btn btn-primary" href="/users/edit">Edit</a>
-        </div>
-      </div>
-      <div class="form-group row">
-        <label class="col-xs-2" for="email">Plan:</label>
-        <div class="col-xs-8">
-          <input type="email" class="form-control" id="email" placeholder="User Plan Name" disabled>
-        </div>
-        <div class="col-xs-2">
-          <a class="btn-sm btn btn-primary" href="/users/plan">Edit</a>
-        </div>
-      </div>
-    </form>
-    <br />
-    <div class='form-actions'>
-      <input id="update_profile" class="button btn btn-default" name="commit" type="submit" value="Save" />
-    </div>
-
-  </div>
-</div>
 
 <script type="text/javascript">
 
@@ -224,9 +125,12 @@ bowtie.user.info(function(user){
   }else{
 
     if(user.plan == "Tester"){
-      $("#edit_tester_profile").show();
+      $(".edit_tester_profile").show();
+      $(".edit_startup_profile").hide();
+
     }else{
-      $("#edit_startup_profile").show();
+      $(".edit_startup_profile").show();
+      $(".edit_tester_profile").hide();
     }
 
     $("#user_name").val(user.plan);
