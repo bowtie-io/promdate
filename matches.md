@@ -18,7 +18,7 @@ permalink: /matches/
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Upgrade</button>
+        <a type="button" class="btn btn-primary" href="/users/plan">Upgrade</a>
       </div>
     </div>
   </div>

@@ -13,7 +13,7 @@ exclude_from_nav: true
 
     <div class="row">
       <div class="col-xs-4">
-        <img src='/img/chad-person.jpg' class='img-circle avatar'>
+        <img src='/img/avatar.gif' class='img-circle avatar'>
       </div>
       <div class="col-xs-8">
         <form class="form-inline" role="form">
