@@ -6,8 +6,6 @@ exclude_from_nav: true
 
 ---
 
-# Edit Profile
-
 
 <!-- TESTER -->
 <div id="edit_tester_profile">
