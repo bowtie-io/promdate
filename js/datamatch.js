@@ -1,4 +1,4 @@
-$("html").on("click, touchstart", "a.export_link", function(e) {
+$("html").on("click touchstart", "a.export_link", function(e) {
     $('#myModal').modal('toggle')
     e.preventDefault();
 });
@@ -193,14 +193,14 @@ function dmProject(project_sid, user) {
         });
       }
 
-      $("html").on("click, touchstart", "ul#profile-tags li", function(e) {
+      $("html").on("click touchstart", "ul#profile-tags li", function(e) {
           e.preventDefault();
           $(this).toggleClass("inactive");
       });
 
 
 
-      $("html").on("click, touchstart", "#update_profile", function(e) {
+      $("html").on("click touchstart", "#update_profile", function(e) {
           e.preventDefault();
 
           var tags = $('ul#profile-tags li:not(.inactive)').map(function(){
@@ -250,15 +250,15 @@ function dmProject(project_sid, user) {
 
 
 
-    $("html").on("click, touchstart", "a#info", function(e) {
+    $("html").on("click touchstart", "a#info", function(e) {
         e.preventDefault();
         $(this).parent().parent().children(".info_block").slideToggle();
     });
-    $("html").on("click, touchstart", "span.close", function(e) {
+    $("html").on("click touchstart", "span.close", function(e) {
         e.preventDefault();
         $(this).parent().slideToggle();
     });
-    $("html").on("click, touchstart", "a#ya", function(e) {
+    $("html").on("click touchstart", "a#ya", function(e) {
         e.preventDefault();
         user = $(this).attr("data-user");
         $.ajax({
@@ -276,7 +276,7 @@ function dmProject(project_sid, user) {
             dataType: "json"
         });
     });
-    $("html").on("click, touchstart", "a#na", function(e) {
+    $("html").on("click touchstart", "a#na", function(e) {
         e.preventDefault();
         user = $(this).attr("data-user");
         $.ajax({
