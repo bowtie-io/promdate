@@ -27,14 +27,14 @@ permalink: /matches/
 
 
 <div class="row">
-  <div class="col-xs-8">
+  <div class="pull-left">
   <div id="match-count" class="btn-circle-sm">
     <span id="match_number">0</span>
     <p>Matches</p>
   </div>
   </div>
 
-  <div class="col-xs-4">
+  <div class="pull-right">
   <div style="text-align:center; font-size:1.4em; margin:15px;">
     <a href="#" class="export_link btn btn-success">Export List</a>
   </div>
