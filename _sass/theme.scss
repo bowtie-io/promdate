@@ -159,8 +159,8 @@ html {
 	height: auto;
 	margin: 0 auto;
 	display: block;
-	max-height:220px;
-	max-width:220px;
+	max-height:200px;
+	max-width:200px;
 	overflow:hidden;
 	img{
 		max-height:100%;
@@ -394,14 +394,14 @@ span.close{
 	background: rgba(255, 255, 255, 0.65);
 }
 
-.login-wrapper .panel {
+.project-wrapper .panel, .login-wrapper .panel {
 	width: 65%;
 	max-width:600px;
 	margin: 0 auto;
 	padding:1rem 2rem;
 }
 
-.login-wrapper {
+.project-wrapper, .login-wrapper {
 	.panel .form-inputs{
 		margin:0 auto;
 	}
