@@ -4,7 +4,13 @@ title: Matches
 permalink: /matches/
 
 ---
-
+<script type="text/javascript">
+bowtie.user.info(function(user){
+  if(!user){
+    window.location.replace("/users/sign_in");
+  }
+});
+</script>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -25,8 +31,8 @@ permalink: /matches/
 </div>
 
 
-
-<div class="row">
+<div class="signed-in" style="display:none;">
+<div id="main" class="row">
   <div class="pull-left">
   <div id="match-count" class="btn-circle-sm">
     <span id="match_number">0</span>
@@ -51,8 +57,6 @@ Your matches are displayed below. Email addresses become visible and can be expo
     </ul>
 </div>
 
-
-<div id="match_template" style="display:none;">
 
 <li class='panel text-left'>
   <div class="row">
@@ -94,8 +98,6 @@ Your matches are displayed below. Email addresses become visible and can be expo
 </div>
 
 
-
-
 <script type="text/javascript">
     bowtie.user.info(function(user){
       if(user){
@@ -103,9 +105,6 @@ Your matches are displayed below. Email addresses become visible and can be expo
 
         var promDate = new dmProject("pr_Tl1Eehzg", user);
         promDate.get_actual_matches();
-
-      }else{
-        $('.signed-out').show();
       }
     });
 </script>
