@@ -5,7 +5,13 @@ permalink: /profile/
 exclude_from_nav: true
 
 ---
-
+<script type="text/javascript">
+bowtie.user.info(function(user){
+  if(!user){
+    window.location.replace("/users/sign_in");
+  }
+});
+</script>
 
 <!-- TESTER -->
 <div id="edit_tester_profile">
