@@ -187,10 +187,20 @@ function dmProject(project_sid, user) {
 
       function fill_details(data){
         $("#user_details").val(data.details);
-        tag_ar = data.tags.split(", ")
-        $.each(tag_ar, function(index, value) {
-          $('#profile-tags li:contains("'+value+'")').removeClass("inactive");
-        });
+
+        if(data.tags == ""){
+          $('#profile-tags li').addClass("inactive");
+        }else{
+          tag_ar = data.tags.split(", ");
+
+          $.each(tag_ar, function(index, value) {
+            $('#profile-tags li:contains("'+value+'")').removeClass("inactive");
+          });
+        }
+
+
+
+
       }
 
       $("html").on("click touchstart", "ul#profile-tags li", function(e) {
