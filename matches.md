@@ -43,7 +43,7 @@ permalink: /matches/
 
 <h1 class="post-title">Matches</h1>
 
-Matched profiles go here - email addresses are not visible unless paid, export button will dump csv if paid OR redirect to upgrade plan page based on the yaml file in this directory
+Your matches are displayed below. Email addresses become visible and can be exported if you upgrade.
 
 <div class="actuals matches-table" style="display:none;">
     <ul id="actual_matches">
