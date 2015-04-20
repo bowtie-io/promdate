@@ -1956,8 +1956,8 @@ p i {
 .jk {
 	#content {
 		.section, .section-alt {
-		padding-top:2vh !important;
-		padding-bottom:0;
+		padding-top:1vh !important;
+		padding-bottom:1vh !important;
 		}
 		.post-title,.page-heading {
 			font-size:2.25em;
@@ -1985,7 +1985,7 @@ p i {
 		h3 {
 			font-size:1.5em;
 			margin:1.25em 0 .5em;
-			color:#789;
+			color:#000 !important;
 			text-transform:uppercase;
 		}
 		h4 {
