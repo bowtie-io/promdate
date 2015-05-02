@@ -4,14 +4,6 @@ title: Matches
 permalink: /matches/
 
 ---
-<script type="text/javascript">
-bowtie.user.info(function(user){
-  if(!user){
-    window.location.replace("/users/sign_in");
-  }
-});
-</script>
-
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -42,7 +34,7 @@ bowtie.user.info(function(user){
 
   <div class="pull-right">
   <div style="text-align:center; font-size:1.4em; margin:15px;">
-    <a href="#" class="export_link btn btn-success">Export List</a>
+    <a href="#" class="export_link btn btn-success" style="display:none;">Export List</a>
   </div>
   </div>
 </div>
@@ -76,7 +68,7 @@ Your matches are below. Email addresses become visible and can be exported if yo
       </ul>
     </div>
   </div>
-  <div class="info_block">
+  <div class="info_block email">
     <h4>Email:</h4>
     <p><a href="#">%email%</a></p>
   </div>
@@ -84,28 +76,27 @@ Your matches are below. Email addresses become visible and can be exported if yo
   <div class="info_block">
     <span class="close">x</span>
     <h4>Details:</h4>
-    <p>%details%</p>
+    <p>%info%</p>
   </div>
-
-
-
 </li>
 
 </div>
 
 
 <script type="text/javascript">
-    bowtie.user.info(function(user){
-      if(user){
-        $('.signed-in').show();
-        var promDate = new dmProject("pr_Tl1Eehzg", user);
-        promDate.get_actual_matches();
+  bowtie.user.info(function(user){
+    if(!user){ return; }
 
-        if(user.plan =="Tester"){
-          $('.export_link').hide();
-        }
+    if(user.plan == "Startup - Pro"){
+      $('.export_link').show();
+    }
+
+    if(user){
+      $('.signed-in').show();
+      var promDate = new dmProject("pr_Tl1Eehzg", user);
+      promDate.get_actual_matches();
 
 
-      }
-    });
+    }
+  });
 </script>

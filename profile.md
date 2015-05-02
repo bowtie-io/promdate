@@ -67,7 +67,7 @@ bowtie.user.info(function(user){
         <label>Info:</label>
         <small class="pull-right edit_startup_profile"> (Elevator pitch, link to project, etc)</small>
         <small class="pull-right edit_tester_profile"> (sell yourself, include profile links, etc.)</small>
-        <textarea class="form-control" id="user_details" rows="4"></textarea>
+        <textarea class="form-control" id="user_info" rows="4"></textarea>
       </div>
     </div>
 
