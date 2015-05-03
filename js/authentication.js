@@ -7,4 +7,6 @@ bowtie.user.info(function(user){
   }else{
     $('.signed-out').show();
   }
+
+  $('.plan-' + user.plan_id.replace(' ', '-').toLowerCase()).show();
 });
