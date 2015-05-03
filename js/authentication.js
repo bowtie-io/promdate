@@ -4,11 +4,12 @@
 bowtie.user.info(function(user){
   if(user){
     $('.signed-in').show();
+
+    if(user.plan_id){
+      $('.plan-' + user.plan_id.replace(' ', '-').toLowerCase()).show();
+    }
   }else{
     $('.signed-out').show();
   }
 
-  if(user.plan_id){
-    $('.plan-' + user.plan_id.replace(' ', '-').toLowerCase()).show();
-  }
 });
