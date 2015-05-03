@@ -8,5 +8,7 @@ bowtie.user.info(function(user){
     $('.signed-out').show();
   }
 
-  $('.plan-' + user.plan_id.replace(' ', '-').toLowerCase()).show();
+  if(user.plan_id){
+    $('.plan-' + user.plan_id.replace(' ', '-').toLowerCase()).show();
+  }
 });
