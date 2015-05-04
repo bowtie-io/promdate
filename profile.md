@@ -18,8 +18,11 @@ bowtie.user.info(function(user){
   <div id="profile" class="user-profile">
 
     <div class="row">
-      <div class="col-xs-4">
+      <div class="col-xs-4 plan-tester">
         <img src='/img/avatar.gif' class='img-circle avatar'>
+      </div>
+      <div class="col-xs-4 plan-startup plan-startup---pro">
+        <img src='/img/avatar2.gif' class='img-circle avatar'>
       </div>
       <div class="col-xs-8">
         <form class="form-inline" role="form">
@@ -39,7 +42,7 @@ bowtie.user.info(function(user){
       <div class="field-box">
         <label>Tags:</label>
         <small class="pull-right edit_startup_profile"> (Select desired Tester skills)</small>
-        <small class="pull-right edit_tester_profile"> (Select as many as you want)</small>
+        <small class="pull-right edit_tester_profile plan-startup plan-startup---pro"> (Select as many as you want)</small>
       <div class="panel">
         <ul id="profile-tags">
         <li class="label inactive">Frontend</li>
@@ -66,7 +69,7 @@ bowtie.user.info(function(user){
       <div class="field-box">
         <label>Info:</label>
         <small class="pull-right edit_startup_profile"> (Elevator pitch, link to project, etc)</small>
-        <small class="pull-right edit_tester_profile"> (sell yourself, include profile links, etc.)</small>
+        <small class="pull-right edit_tester_profile plan-startup plan-startup---pro"> (sell yourself, include profile links, etc.)</small>
         <textarea class="form-control" id="user_info" rows="4"></textarea>
       </div>
     </div>
@@ -128,7 +131,7 @@ bowtie.user.info(function(user){
     // There is no user signed in
   }else{
 
-    if(user.plan == "Tester"){
+    if(user.plan_id == "Tester"){
       $(".edit_tester_profile").show();
       $(".edit_startup_profile").hide();
 
@@ -139,7 +142,7 @@ bowtie.user.info(function(user){
 
     $("#user_name").val(user.name);
     $("#user_email").val(user.email);
-    $("#user_plan").val(user.plan);
+    $("#user_plan").val(user.plan_id);
 
 
     var promDate = new dmProject("pr_Tl1Eehzg", user);

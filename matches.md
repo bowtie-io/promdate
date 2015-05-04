@@ -87,7 +87,7 @@ Your matches are below. Email addresses become visible and can be exported if yo
   bowtie.user.info(function(user){
     if(!user){ return; }
 
-    if(user.plan == "Startup - Pro"){
+    if(user.plan_id == "Startup - Pro"){
       $('.export_link').show();
     }
 

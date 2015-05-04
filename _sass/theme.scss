@@ -13,6 +13,12 @@
 
 /*******************************************************/
 
+
+
+.plan-tester { display:none; }
+.plan-startup { display:none; }
+.plan-startup---pro { display:none; }
+
 .match-btn {
 	i, a i {margin:0 !important;color:#127AC1;}
 	a:hover i{color:#fff !important;}
@@ -2962,8 +2968,3 @@ padding: 60px 20px !important;
 		}
 	}
 }
-
-
-.plan-tester { display:none; }
-.plan-startup { display:none; }
-.plan-startup---pro { display:none; }
