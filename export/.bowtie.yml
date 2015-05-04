@@ -1,0 +1,13 @@
+# /protected_folder/.bowtie.yml
+
+development:
+  permits:
+    plans: Tester, Startup - Pro
+
+staging:
+  permits:
+    plans: Tester, Startup - Pro
+
+master:
+  permits:
+    plans: Tester, Startup - Pro

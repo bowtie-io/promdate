@@ -4,19 +4,35 @@ title: Matches
 permalink: /matches/
 
 ---
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Upgrade Modal -->
+<div class="modal fade" id="upgrade" tabindex="-1" role="dialog" aria-labelledby="#" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
-      <h4 id="myModalLabel">Only 'Pro' users can view/export email addresses... you need to upgrade first.</h4>
-
+        <h4 id="myModalLabel">Only 'Pro' users can view/export email addresses... you need to upgrade first.</h4>
       </div>
       <div class="modal-footer">
         <a type="button" class="btn btn-primary" href="/users/plan">Upgrade</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Export Modal -->
+<div class="plan-startup---pro modal fade" id="export" tabindex="-1" role="dialog" aria-labelledby="#" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <h4 id="myModalLabel">Thanks for using Prom Date! Click the button below to download a .CSV of your current matches.</h4>
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="btn btn-primary" href="/export/matches.csv">Download CSV</a>
       </div>
     </div>
   </div>
@@ -32,10 +48,15 @@ permalink: /matches/
   </div>
   </div>
 
-  <div class="pull-right">
-  <div style="text-align:center; font-size:1.4em; margin:15px;">
-    <a href="#" class="export_link btn btn-success" style="display:none;">Export List</a>
+  <div class="pull-right plan-startup---pro plan-tester">
+    <div style="text-align:center; font-size:1.4em; margin:15px;">
+      <a href="#" class="btn btn-success" data-toggle="modal" data-target="#export">Export List</a>
+    </div>
   </div>
+  <div class="pull-right plan-startup">
+    <div style="text-align:center; font-size:1.4em; margin:15px;">
+      <a href="#" class="btn btn-success" data-toggle="modal" data-target="#upgrade">Export List</a>
+    </div>
   </div>
 </div>
 
@@ -86,10 +107,6 @@ Your matches are below. Email addresses become visible and can be exported if yo
 <script type="text/javascript">
   bowtie.user.info(function(user){
     if(!user){ return; }
-
-    if(user.plan_id == "Startup - Pro"){
-      $('.export_link').show();
-    }
 
     if(user){
       $('.signed-in').show();

@@ -1,7 +1,3 @@
-$("html").on("click touchstart", "a.export_link", function(e) {
-    $('#myModal').modal('toggle')
-    e.preventDefault();
-});
 
 function handleErrorResponse(response){
   if(response.detail == 'profile-required'){
