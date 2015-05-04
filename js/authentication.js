@@ -1,15 +1,30 @@
-/* Controls based on user's session
- * NOTE: Do not use this to hide sensitive elements - this is client side only
- *       and designed for display of navigation options */
-bowtie.user.info(function(user){
-  if(user){
-    $('.signed-in').show();
+/* Elements with class name `signed-in` and `signed-out` are hidden by default.
+ *
+ * When a user has an active session, elements with the `signed-in` class name
+ * are displayed. When a user does not have an active session, elements with the
+ * `signed-out` class name are displayed.
+ *
+ * NOTE: Do not use this to hide sensitive elements - the source for these elements
+ * will still be available to the user despite the session state.
+ * */
 
-    if(user.plan_id){
-      $('.plan-' + user.plan_id.replace(' ', '-').toLowerCase()).show();
-    }
-  }else{
-    $('.signed-out').show();
+(function(){
+  function displayAuthenticationElements(){
+    $('.signed-in, .signed-out').hide();
+
+    bowtie.user.info(function(user){
+      if(user){
+        $('.signed-in').show();
+
+        if(user.plan_id){
+          $('.plan-' + user.plan_id.replace(' ', '-').toLowerCase()).show();
+        }
+      }else{
+        $('.signed-out').show();
+      }
+    });
   }
 
-});
+  $(displayAuthenticationElements);
+  $(document).on("bowtie:splash-rendered", displayAuthenticationElements);
+})();
