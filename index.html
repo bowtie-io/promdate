@@ -302,17 +302,6 @@ bowtie.user.info(function(user){
 <script type="text/javascript">
   $.getJSON("/index.json", { dataType: 'json' }).success(function(data){
     /* Dynamic content from index.json */
-    page.render(data);
-
-    /* Controls based on user's session
-     * NOTE: Do not use this to hide sensitive elements - this is client side only
-     *       and designed for display of navigation options */
-    bowtie.user.info(function(user){
-      if(user){
-        $('.signed-in').show();
-      }else{
-        $('.signed-out').show();
-      }
-    });
+    if(window.page){ page.render(data); }
   });
 </script>
