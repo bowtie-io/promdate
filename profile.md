@@ -41,8 +41,8 @@ bowtie.user.info(function(user){
     <div class='form-group'>
       <div class="field-box">
         <label>Tags:</label>
-        <small class="pull-right edit_startup_profile"> (Select desired Tester skills)</small>
-        <small class="pull-right edit_tester_profile plan-startup plan-startup---pro"> (Select as many as you want)</small>
+        <small class="pull-right plan-tester"> (Select desired Tester skills)</small>
+        <small class="pull-right plan-startup plan-startup---pro"> (Select as many as you want)</small>
       <div class="panel">
         <ul id="profile-tags">
         <li class="label inactive">Frontend</li>
@@ -68,8 +68,8 @@ bowtie.user.info(function(user){
     <div class='form-group'>
       <div class="field-box">
         <label>Info:</label>
-        <small class="pull-right edit_startup_profile"> (Elevator pitch, link to project, etc)</small>
-        <small class="pull-right edit_tester_profile plan-startup plan-startup---pro"> (sell yourself, include profile links, etc.)</small>
+        <small class="pull-right plan-startup plan-startup---pro"> (Elevator pitch, link to your project, Crunchbase/AngelList etc)</small>
+        <small class="pull-right plan-tester"> (Sell yourself, include profile links, etc.)</small>
         <textarea class="form-control" id="user_info" rows="4"></textarea>
       </div>
     </div>
@@ -125,31 +125,16 @@ bowtie.user.info(function(user){
 
 
 <script type="text/javascript">
-
 bowtie.user.info(function(user){
   if(!user){
     // There is no user signed in
   }else{
 
-    if(user.plan_id == "Tester"){
-      $(".edit_tester_profile").show();
-      $(".edit_startup_profile").hide();
-
-    }else{
-      $(".edit_startup_profile").show();
-      $(".edit_tester_profile").hide();
-    }
-
     $("#user_name").val(user.name);
     $("#user_email").val(user.email);
     $("#user_plan").val(user.plan_id);
 
-
     var promDate = new dmProject("pr_Tl1Eehzg", user);
     promDate.edit_profile();
-
-
-
-
   }
 });
