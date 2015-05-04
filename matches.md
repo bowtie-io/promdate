@@ -12,7 +12,7 @@ permalink: /matches/
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
-        <h4>Only 'Pro' users can view/export email addresses... you need to upgrade first.</h4>
+        <h4 id="myModalLabel">Only 'Pro' users can view/export email addresses... you need to upgrade first.</h4>
       </div>
       <div class="modal-footer">
         <a type="button" class="btn btn-primary" href="/users/plan">Upgrade</a>
@@ -22,14 +22,14 @@ permalink: /matches/
 </div>
 
 <!-- Export Modal -->
-<div class="modal fade" id="export" tabindex="-1" role="dialog" aria-labelledby="#" aria-hidden="true">
+<div class="plan-startup---pro modal fade" id="export" tabindex="-1" role="dialog" aria-labelledby="#" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
-        <h4>Thanks for using Prom Date! Click the button below to download a .CSV of your current matches.</h4>
+        <h4 id="myModalLabel">Thanks for using Prom Date! Click the button below to download a .CSV of your current matches.</h4>
       </div>
       <div class="modal-footer">
         <a type="button" class="btn btn-primary" href="/export/matches.csv">Download CSV</a>
