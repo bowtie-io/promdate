@@ -28,7 +28,7 @@ bowtie.user.info(function(user){
         <form class="form-inline" role="form">
           <div class="form-group">
             <label for="exampleInputFile">Profile Pic</label>
-            <input type="file" id="exampleInputFile">
+            <input type="file" id="avatar">
             <p class="help-block">Select a new img (1MB Max) </p>
           </div>
         </form>
@@ -133,6 +133,7 @@ bowtie.user.info(function(user){
     $("#user_name").val(user.name);
     $("#user_email").val(user.email);
     $("#user_plan").val(user.plan_id);
+
 
     var promDate = new dmProject("pr_Tl1Eehzg", user);
     promDate.edit_profile();

@@ -135,6 +135,21 @@ function dmProject() {
         fill_profile(profile);
       });
 
+      $("#avatar").on("change", function(){
+        var file = this.files[0];
+
+        if(file){
+           var fr = new FileReader();
+           fr.onload = function () {
+             console.log(fr.result);
+             $("img.avatar").each(function(){
+               this.src = fr.result;
+             });
+           }
+           fr.readAsDataURL(file);
+        }
+      });
+
       function fill_profile(profile){
         $("#user_info").val(profile.info);
 
@@ -148,6 +163,9 @@ function dmProject() {
           });
         }
 
+        if(profile.avatar){
+          $("img.avatar").attr("src", profile.avatar.url);
+        }
 
 
 
@@ -167,14 +185,15 @@ function dmProject() {
               return $(this).text();
           });
 
-          tags = Array.prototype.slice.call(tags).join(", ");
-          info = $("#user_info").val();
+          var profileData = {
+            info: $("#user_info").val(),
+            tags: Array.prototype.slice.call(tags).join(", ")
+          };
 
+          var avatar = $("#avatar").get(0).files[0];
+          if(avatar){ profileData.avatar = avatar; }
 
-          bowtie.user.profile({
-            info: info,
-            tags: tags
-          }, function(){
+          bowtie.user.profile(profileData, function(){
             window.location.replace("/profile/");
           });
       });
