@@ -55,6 +55,7 @@ function dmProject() {
                     $("#potential_matches").append(
                         template
                           .replace(/%id%/g, profile.id)
+                          .replace(/%avatar%/g, profile.avatar)
                           .replace(/%name%/g, profile.name)
                           .replace(/%tags%/g, tagged)
                           .replace(/%info%/g, profile.info));
@@ -106,6 +107,7 @@ function dmProject() {
                     $("#actual_matches").append(
                         template.replace(/%id%/g, profile.id)
                           .replace(/%name%/g, profile.name)
+                          .replace(/%avatar%/g, profile.avatar)
                           .replace(/%tags%/g, tagged)
                           .replace(/%email%/g, profile.email)
                           .replace(/%info%/g, profile.info));

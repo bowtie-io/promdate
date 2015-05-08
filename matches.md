@@ -77,7 +77,7 @@ Your matches are below. Email addresses become visible and can be exported if yo
 <li class='panel text-left'>
   <div class="row">
     <div class="col-xs-3">
-      <img src='/img/avatar.gif' class='img-circle avatar'>
+      <img src='%avatar%' class='img-circle avatar'>
     </div>
     <h3 class="text-center col-xs-9">%name%</h3>
   </div>
